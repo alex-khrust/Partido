@@ -1,0 +1,88 @@
+// USER VARIABLES SECTION
+
+$accent: #4276FF // Accent Color
+$fontsize: 16px // Body Font Size
+$textcolor: #333 // Text Color
+$lineheight: 1.65 // Document Line Height
+$userfont: Gilroy, sans-serif // User Font Family
+$systemfont: -apple-system, BlinkMacSystemFont, Arial, sans-serif // System Font Family
+
+$txt-white: #fff
+$blue: #4276FF
+
+// Bootstrap compatible gutter variable => $gutter
+// $grid-gutter-width: 30px
+// $gutter: $grid-gutter-width
+
+// IMPORT SECTION
+
+@import '../libs/normalize.css/normalize.css' //Normalize CSS
+
+// @import 'node_modules/bootstrap/scss/bootstrap-reboot.scss' // Bootstrap Reboot collection
+// @import 'node_modules/bootstrap/scss/mixins/_breakpoints.scss' // Bootstrap Breakpoints mixin
+// @import 'node_modules/bootstrap/scss/bootstrap-grid.scss' // Optional Bootstrap Grid
+// @import 'node_modules/bootstrap/scss/utilities/_sizing.scss' // Optional Bootstrap Utilites
+
+// FONTS LOAD SECTION
+
+@mixin font($fname, $fstyle, $fweight, $furl)
+	@font-face
+		font-family: $fname
+		font-style: $fstyle
+		font-weight: $fweight
+		src: url($furl) format('woff2')
+
+@include font('Gilroy', normal, 400, '../fonts/Gilroy/Gilroy-Regular.woff2')
+@include font('Gilroy', italic, 400, '../fonts/Gilroy/Gilroy-RegularItalic.woff2')
+@include font('Gilroy', normal, 600, '../fonts/Gilroy/Gilroy-Semibold.woff2')
+@include font('Gilroy', italic, 600, '../fonts/Gilroy/Gilroy-SemiboldItalic.woff2')
+@include font('Gilroy', normal, 700, '../fonts/Gilroy/Gilroy-Bold.woff2')
+@include font('Gilroy', italic, 700, '../fonts/Gilroy/Gilroy-BoldItalic.woff2')
+@include font('Gilroy', normal, 900, '../fonts/Gilroy/Gilroy-Heavy.woff2')
+@include font('Gilroy', italic, 900, '../fonts/Gilroy/Gilroy-HeavyItalic.woff2')
+
+// GENERAL DOCUMENT STYLES
+
+*,
+*:before,
+*:after
+	box-sizing: border-box
+
+::placeholder
+	color: #666
+
+::selection
+	background-color: $accent
+	color: #fff
+
+input, textarea
+	outline: none
+	&:focus:required:invalid
+		border-color: red
+	&:required:valid
+		border-color: green
+
+body
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	min-width: 320px
+	position: relative
+	overflow-x: hidden
+
+.container
+	width: 100%
+	height: auto
+	padding: 0 25px
+	margin: 0 auto
+
+	
+a,
+.btn
+	transition: .2s ease-in-out
+
+a
+	font-weight: 900
+	color: $blue
+	text-decoration: none

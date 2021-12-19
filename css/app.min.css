@@ -1,0 +1,388 @@
+@import url(c:\Users\stale\Desktop\Partido\libs\normalize.css\normalize.css);
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Gilroy/Gilroy-Regular.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/Gilroy/Gilroy-RegularItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Gilroy/Gilroy-Semibold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: italic;
+  font-weight: 600;
+  src: url("../fonts/Gilroy/Gilroy-SemiboldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Gilroy/Gilroy-Bold.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/Gilroy/Gilroy-BoldItalic.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/Gilroy/Gilroy-Heavy.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Gilroy";
+  font-style: italic;
+  font-weight: 900;
+  src: url("../fonts/Gilroy/Gilroy-HeavyItalic.woff2") format("woff2");
+}
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+::-webkit-input-placeholder {
+  color: #666;
+}
+
+:-ms-input-placeholder {
+  color: #666;
+}
+
+::-ms-input-placeholder {
+  color: #666;
+}
+
+::placeholder {
+  color: #666;
+}
+
+::-moz-selection {
+  background-color: #4276FF;
+  color: #fff;
+}
+
+::selection {
+  background-color: #4276FF;
+  color: #fff;
+}
+
+input, textarea {
+  outline: none;
+}
+
+input:focus:required:invalid, textarea:focus:required:invalid {
+  border-color: red;
+}
+
+input:required:valid, textarea:required:valid {
+  border-color: green;
+}
+
+body {
+  font-family: Gilroy, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #333;
+  min-width: 320px;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+a,
+.btn {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+a {
+  font-weight: 900;
+  color: #4276FF;
+  text-decoration: none;
+}
+
+.enter__header {
+  text-align: center;
+}
+
+.enter__header .welcome {
+  margin: 38px 0 10px !important;
+}
+
+.enter__header .logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.enter__header .logo__images {
+  width: 100%;
+  height: auto;
+  max-width: 48px;
+  margin-right: 15px;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.enter__header .logo__name {
+  font: 900 52px Gilroy;
+  line-height: 1;
+  color: #4276FF;
+}
+
+.enter__header h1.title,
+.enter__header .welcome {
+  margin: 28px 0;
+  display: inline-block;
+  font-size: 26px;
+  font-weight: 900;
+  line-height: 1;
+}
+
+.enter__main {
+  width: 100%;
+}
+
+.enter__main .sign-up {
+  width: 100%;
+  max-width: 327px;
+  margin: 0 auto;
+  display: -ms-grid;
+  display: grid;
+  gap: 28px;
+}
+
+.or {
+  width: 100%;
+  height: 21px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 14px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  position: relative;
+  overflow: hidden;
+}
+
+.or::before, .or::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: calc(50% - 35px);
+  height: 1px;
+  background: #F4F4F4;
+}
+
+.or::before {
+  left: 0;
+}
+
+.or::after {
+  right: 0;
+}
+
+.btn {
+  width: 100%;
+  height: 52px;
+  padding: 0 15px;
+  font-size: 16px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-decoration: none;
+  border-radius: 12px;
+  position: relative;
+}
+
+.btn:disabled {
+  opacity: .7;
+}
+
+.btn-blue {
+  background: #4276FF;
+  color: #fff;
+  border: 1px solid #4276FF;
+}
+
+.btn-blue:hover {
+  background: #fff;
+  color: #4276FF;
+}
+
+.sign-google,
+.sign-fb,
+.sign-apple {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.sign-google svg,
+.sign-fb svg,
+.sign-apple svg {
+  width: 24px;
+  height: 24px;
+  margin-right: 15px;
+}
+
+.sign-google svg path,
+.sign-fb svg path,
+.sign-apple svg path {
+  -webkit-transition: .2s;
+  transition: .2s;
+}
+
+.sign-google {
+  background: #fff;
+  -webkit-box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+          box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.084), 0px 2px 3px rgba(0, 0, 0, 0.168);
+  color: rgba(0, 0, 0, 0.54);
+}
+
+.sign-google:hover, .sign-google.loading {
+  background: #4276FF;
+  color: #fff;
+}
+
+.sign-google:hover svg path, .sign-google.loading svg path {
+  fill: #fff;
+}
+
+.sign-fb {
+  background: #4276FF;
+  color: #fff;
+}
+
+.sign-fb:hover, .sign-fb.loading {
+  background: #1D1F22;
+}
+
+.sign-fb:hover svg path, .sign-fb.loading svg path {
+  fill: #fff;
+}
+
+.sign-apple {
+  background: #000;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.sign-apple:hover, .sign-apple.loading {
+  background: #fff;
+  color: #000;
+  border: 1px solid #000;
+}
+
+.sign-apple:hover svg path, .sign-apple.loading svg path {
+  fill: #000;
+}
+
+.sign-apple:hover::after, .sign-apple.loading::after {
+  background: url("../images/icons/loader-black.svg") no-repeat;
+}
+
+.enter-question {
+  margin-top: 10px;
+  display: -ms-grid;
+  display: grid;
+  justify-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 14px;
+}
+
+.enter-question span {
+  font-weight: bold;
+  color: #000000;
+}
+
+.loading {
+  position: relative;
+}
+
+.loading::after {
+  content: '';
+  position: absolute;
+  right: 15px;
+  width: 29px;
+  height: 29px;
+  -webkit-animation: loading 1000ms infinite linear;
+          animation: loading 1000ms infinite linear;
+  display: block;
+  background: url("../images/icons/loader-white.svg") no-repeat;
+  z-index: 2;
+}
+
+@-webkit-keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes loading {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
