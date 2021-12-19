@@ -162,7 +162,8 @@
   position: relative
   cursor: pointer
   
-  &:disabled
+  &:disabled,
+  &.disabled
     opacity: .7
 
 .btn-blue
@@ -236,11 +237,13 @@
     right: 10px
     // top: 50%
     // transform: translateY(-50%)
-    width: 29px
-    height: 29px
+    width: 21px
+    height: 21px
     animation: loading 1000ms infinite linear
     display: block
     background: url("../images/icons/loader-white.svg") no-repeat
+    background-size: cover
+    background-position: center
     z-index: 2
 
 @keyframes loading

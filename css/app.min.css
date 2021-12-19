@@ -502,7 +502,7 @@ a:hover {
   cursor: pointer;
 }
 
-.btn:disabled {
+.btn:disabled, .btn.disabled {
   opacity: .7;
 }
 
@@ -613,12 +613,14 @@ a:hover {
   content: '';
   position: absolute;
   right: 10px;
-  width: 29px;
-  height: 29px;
+  width: 21px;
+  height: 21px;
   -webkit-animation: loading 1000ms infinite linear;
           animation: loading 1000ms infinite linear;
   display: block;
   background: url("../images/icons/loader-white.svg") no-repeat;
+  background-size: cover;
+  background-position: center;
   z-index: 2;
 }
 

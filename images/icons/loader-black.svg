@@ -1,16 +1,55 @@
-<svg width="29" height="29" viewBox="0 0 29 29" fill="none" xmlns="http://www.w3.org/2000/svg">
-<g opacity="0.55">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14.4994 9.51121C14.0152 9.51121 13.619 9.11505 13.619 8.63085V5.10942C13.619 4.62523 14.0152 4.22906 14.4994 4.22906C14.9835 4.22906 15.3797 4.62523 15.3797 5.10942V8.63085C15.3797 9.11505 14.9835 9.51121 14.4994 9.51121Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9937 10.1796C16.5744 9.93748 16.4294 9.39635 16.6715 8.97701L18.4322 5.92745C18.6743 5.50811 19.2154 5.36314 19.6348 5.60524C20.0541 5.84734 20.1991 6.38846 19.957 6.80781L18.1963 9.85736C17.9542 10.2767 17.413 10.4217 16.9937 10.1796Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.8197 12.0056C18.5776 11.5862 18.7225 11.0451 19.1419 10.803L22.1914 9.04227C22.6108 8.80017 23.1519 8.94514 23.394 9.36448C23.6361 9.78383 23.4911 10.325 23.0718 10.5671L20.0222 12.3278C19.6029 12.5699 19.0618 12.4249 18.8197 12.0056Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M19.488 14.4999C19.488 14.0157 19.8842 13.6195 20.3684 13.6195H23.8898C24.374 13.6195 24.7702 14.0157 24.7702 14.4999C24.7702 14.9841 24.374 15.3803 23.8898 15.3803H20.3684C19.8842 15.3803 19.488 14.9841 19.488 14.4999Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M18.8197 16.9942C19.0618 16.5749 19.6029 16.4299 20.0222 16.672L23.0718 18.4327C23.4911 18.6748 23.6361 19.216 23.394 19.6353C23.1519 20.0547 22.6108 20.1996 22.1914 19.9575L19.1419 18.1968C18.7225 17.9547 18.5776 17.4136 18.8197 16.9942Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M16.9937 18.8202C17.413 18.5781 17.9542 18.7231 18.1963 19.1424L19.957 22.192C20.1991 22.6113 20.0541 23.1525 19.6348 23.3946C19.2154 23.6367 18.6743 23.4917 18.4322 23.0723L16.6715 20.0228C16.4294 19.6034 16.5744 19.0623 16.9937 18.8202Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M14.4994 19.4886C14.9835 19.4886 15.3797 19.8848 15.3797 20.3689V23.8904C15.3797 24.3746 14.9835 24.7707 14.4994 24.7707C14.0152 24.7707 13.619 24.3746 13.619 23.8904V20.3689C13.619 19.8848 14.0152 19.4886 14.4994 19.4886Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.005 18.8202C12.4243 19.0623 12.5693 19.6034 12.3272 20.0228L10.5665 23.0723C10.3244 23.4917 9.78328 23.6367 9.36393 23.3946C8.94459 23.1525 8.79962 22.6113 9.04172 22.192L10.8024 19.1424C11.0445 18.7231 11.5857 18.5781 12.005 18.8202Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.179 16.9942C10.4211 17.4136 10.2762 17.9547 9.85682 18.1968L6.80726 19.9575C6.38791 20.1996 5.84679 20.0547 5.60469 19.6353C5.36259 19.216 5.50756 18.6748 5.9269 18.4327L8.97646 16.672C9.3958 16.4299 9.93693 16.5749 10.179 16.9942Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M9.51066 14.4999C9.51066 14.9841 9.1145 15.3803 8.6303 15.3803H5.10887C4.62468 15.3803 4.22852 14.9841 4.22852 14.4999C4.22852 14.0157 4.62468 13.6195 5.10887 13.6195H8.6303C9.1145 13.6195 9.51066 14.0157 9.51066 14.4999Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M10.179 12.0056C9.93693 12.4249 9.3958 12.5699 8.97646 12.3278L5.9269 10.5671C5.50756 10.325 5.36259 9.78383 5.60469 9.36448C5.84679 8.94514 6.38791 8.80017 6.80726 9.04227L9.85682 10.803C10.2762 11.0451 10.4211 11.5862 10.179 12.0056Z" fill="black"/>
-<path fill-rule="evenodd" clip-rule="evenodd" d="M12.005 10.1796C11.5857 10.4217 11.0445 10.2767 10.8024 9.85736L9.04172 6.80781C8.79962 6.38846 8.94459 5.84734 9.36393 5.60524C9.78328 5.36314 10.3244 5.50811 10.5665 5.92745L12.3272 8.97701C12.5693 9.39635 12.4243 9.93748 12.005 10.1796Z" fill="black"/>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" style="margin:auto;display:block;" width="21px" height="21px" viewBox="0 0 100 100" preserveAspectRatio="xMidYMid">
+<g transform="rotate(0 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-92.3076923076923s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(27.692307692307693 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-84.61538461538461s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(55.38461538461539 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-76.92307692307692s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(83.07692307692308 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-69.23076923076923s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(110.76923076923077 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-61.53846153846153s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(138.46153846153845 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-53.84615384615385s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(166.15384615384616 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-46.15384615384615s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(193.84615384615384 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-38.46153846153846s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(221.53846153846155 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-30.769230769230766s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(249.23076923076923 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-23.076923076923077s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(276.9230769230769 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-15.384615384615383s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(304.61538461538464 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="-7.692307692307692s" repeatCount="indefinite"></animate>
+  </rect>
+</g><g transform="rotate(332.3076923076923 50 50)">
+  <rect x="45" y="-0.5" rx="3.15" ry="3.15" width="10" height="21" fill="#000000">
+    <animate attributeName="opacity" values="1;0" keyTimes="0;1" dur="100s" begin="0s" repeatCount="indefinite"></animate>
+  </rect>
 </g>
 </svg>
