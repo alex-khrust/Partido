@@ -1,23 +1,27 @@
 // Custom JS
 document.addEventListener('DOMContentLoaded', () => {
-
-	$('.enter-main button.btn').on('click', function() {
-		var $this = $(this);
+	// Анимация спинера загрузки кнопок авторизации
+	$('.enter__main button.btn').on('click', function() {
+		let $this = $(this);
 		 $this.addClass('loading');
 		setTimeout(function () {
 			 $this.removeClass('loading');
 		}, 2000)
 	});
 
-	$('body').on('click', '.password-control', function(e){
-		if ($('.password input').attr('type') == 'password'){
+	// Показать/скрыть пароль в input password
+	$('.password').on('click', '.password-control', function(){
+		let $inputPswrd = $(this).closest('.password').find('input')
+		if ($inputPswrd.attr('type') == 'password'){
 			$(this).addClass('view');
-			$(this).closest('.password').find('input').attr('type', 'text');
+			$inputPswrd.attr('type', 'text');
 		} else {
 			$(this).removeClass('view');
-			$(this).closest('.password').find('input').attr('type', 'password');
+			$inputPswrd.attr('type', 'password');
 		}
 		return false;
 	});
+
+	// 
 
 })
