@@ -1,4 +1,4 @@
-@import url(c:\Users\stale\Desktop\Partido\libs\normalize.css\normalize.css);
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
 @font-face {
   font-family: "Gilroy";
   font-style: normal;
@@ -121,6 +121,10 @@ a,
 .btn {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
 }
 
 a {
