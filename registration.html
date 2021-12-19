@@ -4,25 +4,80 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
-  <meta name="description" content="Partido | Sigh Up">
+  <meta name="description" content="Partido | Registration">
   <meta property="og:title" content="Partido">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://www.partido.pp.ua/">
   <meta property="og:image" content="https://www.partido.pp.ua/images/logo.webp">
-  <meta property="og:site_name" content="Partido | Sigh Up">
-  <title>Partido | Sigh Up</title>
+  <meta property="og:site_name" content="Partido | Registration">
+  <title>Partido | Registration</title>
   <link rel="icon" href="images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="css/app.min.css">
 </head>
 
 <body>
 
-  <ol class="index-pages">
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-    <li><a href=""></a></li>
-  </ol>
+  <div class="enter">
+    <div class="container">
+
+      <header class="enter__header">
+        <h1 class="title welcome">Welcome</h1>
+        <h2 class="subtitle">Please provide following details for your new account</h2>
+      </header>
+
+      <main class="enter__main">
+        <section class="registration">
+          <form class="registration-form" action="" method="post">
+
+            <label>
+              <div class="error">
+                <span class="error__message">Error message</span>
+              </div>
+              <input type="text" name="name" placeholder="Full name">
+            </label>
+            <label>
+              <div class="error">
+                <span class="error__message active">Error message</span>
+                <span class="error__message">Такой почты не существует</span>
+              </div>
+              <input type="email" name="email" placeholder="Email">
+            </label>
+            <label>
+              <div class="error">
+                <span class="error__message">Error message</span>
+              </div>
+              <input type="tel" name="phone" placeholder="Phone number">
+            </label>
+            <label class="password">
+              <div class="error">
+                <span class="error__message">Error message</span>
+              </div>
+              <input type="password" name="password" placeholder="Password">
+              <button class="password-control"></button>
+            </label>
+            <label class="password">
+              <div class="error">
+                <span class="error__message">Error message</span>
+              </div>
+              <input type="password" name="password" placeholder="Confirm password">
+              <button class="password-control"></button>
+            </label>
+
+            <div class="chbx-wrapper">
+              <label class="chbx">
+                <input type="checkbox" name="chbx">
+                <span></span>
+              </label>
+              <p>By creating account, you agree to our <a href="#">terms and conditions</a> and <a href="#">privacy policy</a></p>
+            </div>
+
+            <button class="btn btn-blue" type="submit">Sign in</button>
+          </form>
+        </section>
+      </main>
+
+    </div>
+  </div>
 
 </body>
 <script src="libs/jquery/dist/jquery.min.js"></script>

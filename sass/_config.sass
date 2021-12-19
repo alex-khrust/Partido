@@ -56,12 +56,111 @@ $blue: #4276FF
 	background-color: $accent
 	color: #fff
 
+form
+	width: 100%
+	display: grid
+	gap: 20px
+
 input, textarea
 	outline: none
-	&:focus:required:invalid
-		border-color: red
+	&:invalid
+		border-color:  rgba(255, 0, 0, 1)
+	// &:valid
+	// 	border-color: rgba(80, 212, 68, 1)
+	&:required:invalid
+		border-color:  rgba(255, 0, 0, 1)
 	&:required:valid
-		border-color: green
+		border-color: rgba(80, 212, 68, 1)
+	&:focus
+		border-color:  rgba(66, 118, 255, 1)
+
+input, textarea
+	width: 100%
+	height: auto
+	max-width: 327px
+	min-height: 52px
+	padding: 16px
+	background: #F5F5F5
+	border-radius: 12px
+	border: 1px solid transparent
+
+label
+	position: relative
+
+.error
+	width: 100%
+	position: absolute
+	top: -16px
+	left: 0
+	display: grid
+	align-items: center
+	justify-items: end
+	&__message
+		width: auto
+		padding-left: 24px
+		position: absolute
+		right: 0
+		top: 0
+		font-size: 12px
+		font-weight: 400
+		line-height: 1
+		opacity: 0
+		visibility: hidden
+		z-index: -1
+		transition: .2s
+		&::before
+			content: ''
+			width: 16px
+			height: 13px
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translateY(-60%)
+			background: url("data:image/svg+xml,%3Csvg width='16' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.666504 13H15.3332L7.99984 0.333334L0.666504 13ZM8.6665 11H7.33317V9.66667H8.6665V11ZM8.6665 8.33333H7.33317V5.66667H8.6665V8.33333Z' fill='%23F03738'/%3E%3C/svg%3E%0A") no-repeat
+		&.active
+			opacity: 1
+			visibility: visible
+			z-index: 1
+
+input[type='checkbox']
+	display: none
+	&+span
+		width: 25px
+		height: 25px
+		padding: 3px
+		position: relative
+		display: flex
+		border: 2px solid #636366
+		border-radius: 5px
+		transition: .2s
+	&:checked + span
+		background: $blue
+		border-color: $blue
+	&:checked + span:before
+		content: ''
+		width: 8px
+		height: 12px
+		position: absolute
+		top: 7px
+		left: 50%
+		transform: rotate(45deg) translateX(-70%)
+		border-right: 2px solid #fff
+		border-bottom: 2px solid #fff
+	&:disabled + span
+		background: rgba(60, 60, 67, 0.18)
+		border-color: rgba(60, 60, 67, 0.18)
+	&:disabled + span:before
+		content: ''
+		width: 8px
+		height: 12px
+		position: absolute
+		top: 7px
+		left: 50%
+		transform: rotate(45deg) translateX(-70%)
+		border-right: 2px solid #fff
+		border-bottom: 2px solid #fff
+
+
 
 body
 	font-family: $userfont
@@ -82,10 +181,12 @@ a,
 button,
 .btn
 	transition: .2s ease-in-out
-	appearance: none
+	-webkit-tap-highlight-color: transparent
 	outline: none
 
 a
 	font-weight: 900
 	color: $blue
 	text-decoration: none
+	&:hover
+		color: #000
