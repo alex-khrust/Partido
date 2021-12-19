@@ -1,7 +1,8 @@
 // Custom JS
 document.addEventListener('DOMContentLoaded', () => {
+
 	// Анимация спинера загрузки кнопок авторизации
-	$('.enter__main button.btn').on('click', function() {
+	$('.sign-up .enter__main button.btn').on('click', function() {
 		let $this = $(this);
 		 $this.addClass('loading');
 		setTimeout(function () {
