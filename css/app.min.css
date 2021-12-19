@@ -118,6 +118,7 @@ body {
 }
 
 a,
+button,
 .btn {
   -webkit-transition: .2s ease-in-out;
   transition: .2s ease-in-out;
@@ -359,7 +360,7 @@ a {
 .loading::after {
   content: '';
   position: absolute;
-  right: 15px;
+  right: 10px;
   width: 29px;
   height: 29px;
   -webkit-animation: loading 1000ms infinite linear;
