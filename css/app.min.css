@@ -219,6 +219,10 @@ input[type='checkbox']:disabled + span:before {
   border-bottom: 2px solid #fff;
 }
 
+.chbx--error span {
+  border-color: red !important;
+}
+
 body {
   font-family: Gilroy, sans-serif;
   font-size: 16px;
