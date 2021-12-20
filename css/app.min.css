@@ -99,15 +99,11 @@ input, textarea {
   outline: none;
 }
 
-input:invalid, textarea:invalid {
+input.invalid, input:focus.invalid, textarea.invalid, textarea:focus.invalid {
   border-color: red;
 }
 
-input:required:invalid, textarea:required:invalid {
-  border-color: red;
-}
-
-input:required:valid, textarea:required:valid {
+input.valid, input:focus.valid, textarea.valid, textarea:focus.valid {
   border-color: #50d444;
 }
 

@@ -63,13 +63,17 @@ form
 
 input, textarea
 	outline: none
-	&:invalid
+	// &:invalid:required,
+	&.invalid,
+	&:focus.invalid
 		border-color:  rgba(255, 0, 0, 1)
 	// &:valid
 	// 	border-color: rgba(80, 212, 68, 1)
-	&:required:invalid
-		border-color:  rgba(255, 0, 0, 1)
-	&:required:valid
+	// &:invalid:required
+	// 	border-color:  rgba(255, 0, 0, 1)
+	// &:valid:required,
+	&.valid,
+	&:focus.valid
 		border-color: rgba(80, 212, 68, 1)
 	&:focus
 		border-color:  rgba(66, 118, 255, 1)
@@ -155,6 +159,8 @@ input[type='checkbox']
 		transform: rotate(45deg) translateX(-70%)
 		border-right: 2px solid #fff
 		border-bottom: 2px solid #fff
+
+	
 
 
 
