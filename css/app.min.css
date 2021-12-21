@@ -291,7 +291,7 @@ input[type='checkbox']:disabled + span:before {
   border-bottom: 2px solid #fff;
 }
 
-.chbx--error span {
+.chbx.invalid span {
   border-color: red !important;
 }
 
