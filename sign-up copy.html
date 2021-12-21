@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+  <meta name="description" content="Partido | Sigh Up">
+  <meta property="og:title" content="Partido">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.partido.pp.ua/">
+  <meta property="og:image" content="https://www.partido.pp.ua/images/logo.webp">
+  <meta property="og:site_name" content="Partido | Sigh Up">
+  <title>Partido | Sigh Up</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/app.min.css">
+
+  <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+  <script src="https://apis.google.com/js/api:client.js"></script>
+  <script>
+    var googleUser = {};
+    var startApp = function() {
+      gapi.load('auth2', function(){
+        // Retrieve the singleton for the GoogleAuth library and set up the client.
+        auth2 = gapi.auth2.init({
+          client_id: '236634018557-s6n1ppsun9em0b28kc85mke3b3uqq67a.apps.googleusercontent.com',
+          cookiepolicy: 'single_host_origin',
+          // Request scopes in addition to 'profile' and 'email'
+          //scope: 'additional_scope'
+        });
+        attachSignin(document.getElementById('customBtn'));
+      });
+    };
+
+    function attachSignin(element) {
+      console.log(element.id);
+      auth2.attachClickHandler(element, {},
+          function(googleUser) {
+            document.getElementById('name').innerText = "Signed in: " +
+                googleUser.getBasicProfile().getName();
+          }, function(error) {
+            alert(JSON.stringify(error, undefined, 2));
+          });
+    }
+  </script>
+</head>
+
+<body>
+
+  <div class="enter sign-up">
+    <div class="container">
+
+      <header class="enter__header">
+        <h2 class="welcome">Welcome to</h2>
+        <a class="logo" href="index.html">
+          <img class="logo__images" src="images/logo.png" alt="logo">
+          <span class="logo__name">Partido</span>
+        </a>
+        <h1 class="title">Sign Up</h1>
+      </header>
+
+      <main class="enter__main">
+        <a class="btn btn-blue" href="registration.html">Sign up with mail</a>
+        <div class="or">Or</div>
+        
+
+
+        <button class="btn sign-google" id="gSignInWrapper">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M23.04 12.2614C23.04 11.4459 22.9668 10.6618 22.8309 9.90912H12V14.3575H18.1891C17.9225 15.795 17.1123 17.013 15.8943 17.8284V20.7139H19.6109C21.7855 18.7118 23.04 15.7637 23.04 12.2614Z" fill="#4285F4"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 23.4998C15.105 23.4998 17.7081 22.47 19.6109 20.7137L15.8943 17.8282C14.8645 18.5182 13.5472 18.9259 12 18.9259C9.00474 18.9259 6.46951 16.903 5.56519 14.1848H1.72314V17.1644C3.61542 20.9228 7.50451 23.4998 12 23.4998Z" fill="#34A853"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M5.56523 14.1851C5.33523 13.4951 5.20455 12.758 5.20455 12.0001C5.20455 11.2421 5.33523 10.5051 5.56523 9.81506V6.83551H1.72318C0.944318 8.38801 0.5 10.1444 0.5 12.0001C0.5 13.8557 0.944318 15.6121 1.72318 17.1646L5.56523 14.1851Z" fill="#FBBC05"/>
+            <path fill-rule="evenodd" clip-rule="evenodd" d="M12 5.07386C13.6884 5.07386 15.2043 5.65409 16.3961 6.79364L19.6945 3.49523C17.7029 1.63955 15.0997 0.5 12 0.5C7.50451 0.5 3.61542 3.07705 1.72314 6.83545L5.56519 9.815C6.46951 7.09682 9.00474 5.07386 12 5.07386Z" fill="#EA4335"/>
+          </svg>
+
+          <span class="label">Sign in with:</span>
+          <div id="customBtn" class="customGPlusSignIn">
+            <span class="icon"></span>
+            <span class="buttonText">Google</span>
+          </div>
+        </button>
+        <div id="name"></div>
+
+        <button class="btn sign-fb">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M23.5 12.0699C23.5 5.7186 18.3513 0.569879 12 0.569879C5.64872 0.569879 0.5 5.7186 0.5 12.0699C0.5 17.8099 4.70538 22.5674 10.2031 23.4302V15.3941H7.2832V12.0699H10.2031V9.53629C10.2031 6.6541 11.92 5.06207 14.5468 5.06207C15.805 5.06207 17.1211 5.28668 17.1211 5.28668V8.11675H15.671C14.2424 8.11675 13.7969 9.00322 13.7969 9.91266V12.0699H16.9863L16.4765 15.3941H13.7969V23.4302C19.2946 22.5674 23.5 17.8099 23.5 12.0699Z" fill="white"/>
+          </svg>
+          Sign In with Facebook</button>
+        <button class="btn sign-apple">
+          <svg width="20" height="24" viewBox="0 0 20 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M19.2808 18.424C18.933 19.2275 18.5213 19.9672 18.0442 20.6472C17.394 21.5743 16.8616 22.216 16.4513 22.5724C15.8153 23.1573 15.1338 23.4568 14.4041 23.4739C13.8802 23.4739 13.2485 23.3248 12.513 23.0224C11.7752 22.7214 11.0972 22.5724 10.4772 22.5724C9.82695 22.5724 9.12959 22.7214 8.38368 23.0224C7.63662 23.3248 7.03481 23.4824 6.57468 23.498C5.87491 23.5278 5.1774 23.2197 4.48118 22.5724C4.03681 22.1848 3.48099 21.5204 2.81515 20.5791C2.10075 19.5739 1.51342 18.4084 1.05329 17.0795C0.560506 15.6442 0.313477 14.2543 0.313477 12.9087C0.313477 11.3673 0.646541 10.0379 1.31366 8.92385C1.83796 8.029 2.53546 7.32312 3.40844 6.80493C4.28142 6.28674 5.22468 6.02267 6.24048 6.00578C6.7963 6.00578 7.52518 6.1777 8.43095 6.51559C9.33417 6.85462 9.91412 7.02655 10.1684 7.02655C10.3585 7.02655 11.0028 6.82552 12.0949 6.42473C13.1278 6.05305 13.9995 5.89916 14.7136 5.95978C16.6487 6.11595 18.1024 6.87876 19.0693 8.25303C17.3386 9.30163 16.4826 10.7703 16.4996 12.6544C16.5152 14.122 17.0476 15.3432 18.0939 16.3129C18.5681 16.7629 19.0977 17.1107 19.6868 17.3578C19.5591 17.7283 19.4242 18.0832 19.2808 18.424V18.424ZM14.8428 0.960131C14.8428 2.11039 14.4226 3.18439 13.5849 4.17847C12.5741 5.36023 11.3514 6.04311 10.0256 5.93536C10.0087 5.79736 9.99888 5.65213 9.99888 5.49951C9.99888 4.39526 10.4796 3.21349 11.3333 2.24724C11.7595 1.75801 12.3015 1.35122 12.9588 1.02671C13.6147 0.707053 14.2352 0.530273 14.8187 0.5C14.8357 0.653772 14.8428 0.807554 14.8428 0.960116V0.960131Z" fill="white"/>
+          </svg>
+          Sign In with Apple</button>
+        <div class="enter-question">
+          <span>Already have an account?</span>
+          <a href="sign-in.html">Sign in</a>
+        </div>
+      </main>
+
+    </div>
+  </div>
+
+</body>
+<script>startApp();</script>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</html>

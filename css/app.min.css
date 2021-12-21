@@ -227,16 +227,6 @@ label {
           transform: scale(1);
 }
 
-.registration-form {
-  position: relative;
-}
-
-.registration .error {
-  position: absolute;
-  bottom: calc(100% + 20px);
-  left: 0;
-}
-
 input[type='checkbox'] {
   display: none;
 }
@@ -411,7 +401,6 @@ a:hover {
 
 .enter .registration-form {
   width: 100%;
-  margin-top: 100px;
   display: -ms-grid;
   display: grid;
   gap: 20px;
