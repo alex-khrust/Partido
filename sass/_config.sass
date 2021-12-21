@@ -67,6 +67,7 @@ input, textarea
 	&.invalid,
 	&:focus.invalid
 		border-color:  rgba(255, 0, 0, 1)
+		background: #FDFDFD 
 	// &:valid
 	// 	border-color: rgba(80, 212, 68, 1)
 	// &:invalid:required
@@ -75,8 +76,10 @@ input, textarea
 	&.valid,
 	&:focus.valid
 		border-color: rgba(80, 212, 68, 1)
+		background: #FDFDFD
 	&:focus
 		border-color:  rgba(66, 118, 255, 1)
+		background: #FDFDFD 
 
 input, textarea
 	width: 100%
@@ -95,32 +98,53 @@ label
 	width: 100%
 	position: relative
 
+.enter__main
+	position: relative
+
 .error
-	width: auto
-	position: absolute
-	top: -16px
-	right: 0
-	padding-left: 24px
+	width: 100%
+	padding: 35px 16px 13px
+	position: relative
+	// position: absolute
+	// top: 0
+	// right: 0
+	display: grid
+	align-items: center
+	justify-content: center
+	text-align: center
 	font-size: 12px
-	font-weight: 400
-	line-height: 1
+	font-weight: 700
+	line-height: 15px
+	color: rgba(240, 55, 56, 1)
+	background: rgba(255, 241, 241, 1)
+	border-radius: 12px
 	opacity: 0
 	visibility: hidden
 	z-index: -1
-	transition: .2s
+	transform: scale(0)
+	transition: transform .2s
 	&::before
 		content: ''
 		width: 16px
 		height: 13px
 		position: absolute
-		left: 0
-		top: 50%
-		transform: translateY(-60%)
+		left: 50%
+		top: 13px
+		transform: translateX(-50%)
 		background: url("data:image/svg+xml,%3Csvg width='16' height='13' viewBox='0 0 16 13' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.666504 13H15.3332L7.99984 0.333334L0.666504 13ZM8.6665 11H7.33317V9.66667H8.6665V11ZM8.6665 8.33333H7.33317V5.66667H8.6665V8.33333Z' fill='%23F03738'/%3E%3C/svg%3E%0A") no-repeat
 	&.active
 		opacity: 1
 		visibility: visible
-		z-index: 1
+		z-index: 
+		transform: scale(1)
+
+.registration
+	&-form
+		position: relative
+	.error
+		position: absolute
+		bottom: calc(100% + 20px)
+		left: 0
 
 input[type='checkbox']
 	display: none
@@ -134,8 +158,8 @@ input[type='checkbox']
 		border-radius: 5px
 		transition: .2s
 	&:checked + span
-		background: $blue
-		border-color: $blue
+		background: $blue !important
+		border-color: $blue !important
 	&:checked + span:before
 		content: ''
 		width: 8px
