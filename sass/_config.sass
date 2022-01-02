@@ -56,6 +56,46 @@ $blue: #4276FF
 	background-color: $accent
 	color: #fff
 
+::-webkit-scrollbar
+	width: 4px
+	height: 4px
+
+::-webkit-scrollbar-thumb
+	background-color: rgba(224, 224, 224, 1)
+	border-radius: 5px
+	&:hover
+		background-color: darken(rgba(224, 224, 224, 1), 10%)
+
+body
+	min-width: 320px
+	font-family: $userfont
+	font-size: $fontsize
+	line-height: $lineheight
+	color: $textcolor
+	position: relative
+	overflow-x: hidden
+
+.container
+	width: 100%
+	height: auto
+	padding: 0 25px
+	margin: 0 auto
+
+a,
+button,
+.btn
+	transition: .2s ease-in-out
+	-webkit-tap-highlight-color: transparent !important
+	outline: none !important
+	border: none
+
+a
+	font-weight: 900
+	color: $blue
+	text-decoration: none
+	&:hover
+		color: #000
+
 form
 	width: 100%
 	display: grid
@@ -218,33 +258,6 @@ input[type='checkbox']
 		border-color: rgba(255, 0, 0, 1) !important
 
 
-
-body
-	font-family: $userfont
-	font-size: $fontsize
-	line-height: $lineheight
-	color: $textcolor
-	min-width: 320px
-	position: relative
-	overflow-x: hidden
-
-.container
-	width: 100%
-	height: auto
-	padding: 0 25px
-	margin: 0 auto
-
-a,
-button,
-.btn
-	transition: .2s ease-in-out
-	-webkit-tap-highlight-color: transparent !important
-	outline: none !important
-	border: none
-
-a
-	font-weight: 900
-	color: $blue
-	text-decoration: none
-	&:hover
-		color: #000
+ul
+	list-style: none
+	padding: 0

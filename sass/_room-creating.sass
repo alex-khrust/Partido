@@ -1,0 +1,107 @@
+.room
+
+.total-member
+  font-size: 14px
+  font-weight: 400
+  line-height: 1
+  color: #D6D6D6
+  margin-bottom: 10px
+
+
+.room-create-form
+  height: 100%
+  grid-template-rows: auto 1fr auto
+
+.add-members
+  &__list
+    width: 100%
+    height: auto
+    max-height: 382px
+    margin: 0
+    display: grid
+    align-content: start
+    gap: 18px
+    overflow-y: auto
+  &__item
+    .member-check
+      width: 100%
+      height: auto
+      min-height: 62px
+      display: flex
+      cursor: pointer
+      position: relative
+      -webkit-tap-highlight-color: transparent !important
+      outline: none !important
+      input[type='checkbox']
+        &+span
+          width: 24px
+          height: 24px
+          background: #fff
+          border: 1px solid #AEAEB2
+          border-radius: 50%
+          transition: .2s
+          position: absolute
+          top: 50%
+          right: 20px
+          transform: translateY(-50%)
+        &:checked + span:before
+          width: 8px
+          height: 12px
+          top: 7px
+        &:checked + span + .member,
+        &:hover + span + .member
+          transition: .3s
+          background: #F8F8F8
+          .member__name
+            color: #000
+        &:disabled + span:before
+          width: 8px
+          height: 12px
+          top: 7px
+          border-right: 2px solid #fff
+          border-bottom: 2px solid #fff
+
+.member
+  width: 100%
+  height: auto
+  min-height: 62px
+  padding: 7px 6px
+  display: grid
+  align-items: center
+  justify-content: start
+  grid-template-areas: 'foto name' 'foto tel'
+  gap: 0 12px
+  line-height: 1
+  border-radius: 12px
+  &:hover
+    transition: .3s
+    background: #F8F8F8
+    .member__name
+      color: #000
+  &__foto
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    background: linear-gradient(320.42deg, #EFA535 39.21%, #FFE97A 89.5%), #C4C4C4
+    display: flex
+    align-items: center
+    justify-content: center
+    font-size: 18px
+    font-weight: 800
+    grid-area: foto
+    color: #fff
+    img
+      width: auto
+      height: 100%
+      object-fit: cover
+  &__name
+    font-size: 14px
+    font-weight: 600
+    color: #7B7B7B
+    transition: .3s
+    grid-area: name
+  &__tel
+    font-size: 14px
+    font-weight: normal
+    color: #71717B
+    grid-area: tel

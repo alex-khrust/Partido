@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+  <meta name="description" content="Partido | Create room">
+  <meta property="og:title" content="Partido">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.partido.pp.ua/">
+  <meta property="og:image" content="https://www.partido.pp.ua/images/logo.webp">
+  <meta property="og:site_name" content="Partido | Create room">
+  <title>Partido | Create room</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+  <div class="room room-create">
+    <div class="container">
+
+      <header class="room__header">
+        <a href="sign-up.html" class="btn-back"></a>
+        <h1 class="title welcome">Add members</h1>
+        <span class="total-members">0/20000</span>
+      </header>
+
+      <main class="room__main">
+        <form class="room-create-form" action="" method="post" novalidate>
+          
+          <div class="search input-box">
+            <label>
+              <input type="search" name="search" placeholder="Search contacts">
+            </label>
+          </div>
+
+          <ul class="add-members__list">
+            <li class="add-members__item">
+              <label class="member-check">
+                <input type="checkbox" name="chbx" required>
+                <span></span>
+                <div class="member">
+                  <div class="member__foto">
+                    <img src="" alt="">
+                    <span class="letter">A</span>
+                  </div>
+                  <span class="member__name">Andrew Y</span>
+                  <span class="member__tel">+380 664 82 14 45</span>
+                </div>
+              </label>
+            </li>
+            <li class="add-members__item">
+              <label class="member-check">
+                <input type="checkbox" name="chbx" required>
+                <span></span>
+                <div class="member">
+                  <div class="member__foto">
+                    <img src="" alt="">
+                    <span class="letter">B</span>
+                  </div>
+                  <span class="member__name">Bara Mamara</span>
+                  <span class="member__tel">+380 50 681 42 45</span>
+                </div>
+              </label>
+            </li>
+            <li class="add-members__item">
+              <label class="member-check">
+                <input type="checkbox" name="chbx" required>
+                <span></span>
+                <div class="member">
+                  <div class="member__foto">
+                    <img src="" alt="">
+                    <span class="letter">T</span>
+                  </div>
+                  <span class="member__name">Timo Werhaus</span>
+                  <span class="member__tel">+4 480 50 681 42 45</span>
+                </div>
+              </label>
+            </li>
+            <li class="add-members__item">
+              <label class="member-check">
+                <input type="checkbox" name="chbx" required>
+                <span></span>
+                <div class="member">
+                  <div class="member__foto">
+                    <img src="" alt="">
+                    <span class="letter">M</span>
+                  </div>
+                  <span class="member__name">Mars Overmars</span>
+                  <span class="member__tel">+1 3325  54 345 65</span>
+                </div>
+              </label>
+            </li>
+            <li class="add-members__item">
+              <label class="member-check">
+                <input type="checkbox" name="chbx" required>
+                <span></span>
+                <div class="member">
+                  <div class="member__foto">
+                    <img src="" alt="">
+                    <span class="letter">S</span>
+                  </div>
+                  <span class="member__name">Steve Wonder</span>
+                  <span class="member__tel">+87 4543 23 546</span>
+                </div>
+              </label>
+            </li>
+          </ul>
+
+          <button class="btn btn-blue" type="button">Сontinue</button>
+        </form>
+      </main>
+
+    </div>
+  </div>
+
+</body>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</html>

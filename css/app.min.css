@@ -1,5 +1,4 @@
 @import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css");
-@import url("https://alex-khrust.github.io/Partido/css/app.min.css");
 @font-face {
   font-family: "Gilroy";
   font-style: normal;
@@ -87,6 +86,57 @@
 ::selection {
   background-color: #4276FF;
   color: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #e0e0e0;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #c7c7c7;
+}
+
+body {
+  min-width: 320px;
+  font-family: Gilroy, sans-serif;
+  font-size: 16px;
+  line-height: 1.65;
+  color: #333;
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  padding: 0 25px;
+  margin: 0 auto;
+}
+
+a,
+button,
+.btn {
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+  border: none;
+}
+
+a {
+  font-weight: 900;
+  color: #4276FF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #000;
 }
 
 form {
@@ -286,56 +336,33 @@ input[type='checkbox']:disabled + span:before {
   border-color: red !important;
 }
 
-body {
-  font-family: Gilroy, sans-serif;
-  font-size: 16px;
-  line-height: 1.65;
-  color: #333;
-  min-width: 320px;
-  position: relative;
-  overflow-x: hidden;
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.container {
+.enter,
+.room {
   width: 100%;
   height: auto;
-  padding: 0 25px;
-  margin: 0 auto;
-}
-
-a,
-button,
-.btn {
-  -webkit-transition: .2s ease-in-out;
-  transition: .2s ease-in-out;
-  -webkit-tap-highlight-color: transparent !important;
-  outline: none !important;
-  border: none;
-}
-
-a {
-  font-weight: 900;
-  color: #4276FF;
-  text-decoration: none;
-}
-
-a:hover {
-  color: #000;
-}
-
-.enter {
-  width: 100%;
+  min-height: calc(100vh - 48px*2);
   max-width: calc(327px + 50px);
-  margin: 38px auto;
+  margin: 48px auto;
+  overflow-y: auto;
 }
 
-.enter .container {
+.enter .container,
+.room .container {
+  height: calc(100vh - 48px*2);
   display: -ms-grid;
   display: grid;
   gap: 20px;
+  -ms-grid-rows: auto 1fr;
+      grid-template-rows: auto 1fr;
 }
 
-.enter__header {
+.enter__header,
+.room__header {
   width: 100%;
   display: -ms-grid;
   display: grid;
@@ -346,11 +373,13 @@ a:hover {
   position: relative;
 }
 
-.enter__header .welcome {
+.enter__header .welcome,
+.room__header .welcome {
   margin: 0 0 10px !important;
 }
 
-.enter__header .logo {
+.enter__header .logo,
+.room__header .logo {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -362,7 +391,8 @@ a:hover {
           align-items: flex-end;
 }
 
-.enter__header .logo__images {
+.enter__header .logo__images,
+.room__header .logo__images {
   width: 100%;
   height: auto;
   max-width: 48px;
@@ -371,14 +401,17 @@ a:hover {
      object-fit: contain;
 }
 
-.enter__header .logo__name {
+.enter__header .logo__name,
+.room__header .logo__name {
   font: 900 52px Gilroy;
   line-height: 1;
   color: #4276FF;
 }
 
 .enter__header h1.title,
-.enter__header .welcome {
+.enter__header .welcome,
+.room__header h1.title,
+.room__header .welcome {
   margin: 28px 0;
   display: inline-block;
   font-size: 26px;
@@ -386,28 +419,32 @@ a:hover {
   line-height: 1;
 }
 
-.enter__header .subtitle {
+.enter__header .subtitle,
+.room__header .subtitle {
   margin: 0;
   font-size: 14px;
   line-height: 1.5;
   color: #000000;
 }
 
-.enter__main {
+.enter__main,
+.room__main {
   width: 100%;
   display: -ms-grid;
   display: grid;
   gap: 28px;
 }
 
-.enter .registration-form {
+.enter .registration-form,
+.room .registration-form {
   width: 100%;
   display: -ms-grid;
   display: grid;
   gap: 20px;
 }
 
-.enter .registration-form .btn {
+.enter .registration-form .btn,
+.room .registration-form .btn {
   margin-top: 18px;
 }
 
@@ -765,4 +802,164 @@ a:hover {
 
 .round-btns + .enter-question {
   margin: 0;
+}
+
+.total-member {
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 1;
+  color: #D6D6D6;
+  margin-bottom: 10px;
+}
+
+.room-create-form {
+  height: 100%;
+  -ms-grid-rows: auto 1fr auto;
+      grid-template-rows: auto 1fr auto;
+}
+
+.add-members__list {
+  width: 100%;
+  height: auto;
+  max-height: 382px;
+  margin: 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-flex-line-pack: start;
+      align-content: start;
+  gap: 18px;
+  overflow-y: auto;
+}
+
+.add-members__item .member-check {
+  width: 100%;
+  height: auto;
+  min-height: 62px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  position: relative;
+  -webkit-tap-highlight-color: transparent !important;
+  outline: none !important;
+}
+
+.add-members__item .member-check input[type='checkbox'] + span {
+  width: 24px;
+  height: 24px;
+  background: #fff;
+  border: 1px solid #AEAEB2;
+  border-radius: 50%;
+  -webkit-transition: .2s;
+  transition: .2s;
+  position: absolute;
+  top: 50%;
+  right: 20px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.add-members__item .member-check input[type='checkbox']:checked + span:before {
+  width: 8px;
+  height: 12px;
+  top: 7px;
+}
+
+.add-members__item .member-check input[type='checkbox']:checked + span + .member,
+.add-members__item .member-check input[type='checkbox']:hover + span + .member {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #F8F8F8;
+}
+
+.add-members__item .member-check input[type='checkbox']:checked + span + .member .member__name,
+.add-members__item .member-check input[type='checkbox']:hover + span + .member .member__name {
+  color: #000;
+}
+
+.add-members__item .member-check input[type='checkbox']:disabled + span:before {
+  width: 8px;
+  height: 12px;
+  top: 7px;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+}
+
+.member {
+  width: 100%;
+  height: auto;
+  min-height: 62px;
+  padding: 7px 6px;
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+      grid-template-areas: 'foto name' 'foto tel';
+  gap: 0 12px;
+  line-height: 1;
+  border-radius: 12px;
+}
+
+.member:hover {
+  -webkit-transition: .3s;
+  transition: .3s;
+  background: #F8F8F8;
+}
+
+.member:hover .member__name {
+  color: #000;
+}
+
+.member__foto {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: linear-gradient(320.42deg, #EFA535 39.21%, #FFE97A 89.5%), #C4C4C4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 18px;
+  font-weight: 800;
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: foto;
+  color: #fff;
+}
+
+.member__foto img {
+  width: auto;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.member__name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #7B7B7B;
+  -webkit-transition: .3s;
+  transition: .3s;
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: name;
+}
+
+.member__tel {
+  font-size: 14px;
+  font-weight: normal;
+  color: #71717B;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: tel;
 }
