@@ -804,7 +804,7 @@ ul {
   margin: 0;
 }
 
-.total-member {
+.total-members {
   font-size: 14px;
   font-weight: 400;
   line-height: 1;
@@ -812,7 +812,8 @@ ul {
   margin-bottom: 10px;
 }
 
-.room-create-form {
+.room-create-form,
+.room-create-name-form {
   height: 100%;
   -ms-grid-rows: auto 1fr auto;
       grid-template-rows: auto 1fr auto;
@@ -918,7 +919,6 @@ ul {
   width: 48px;
   height: 48px;
   border-radius: 50%;
-  background: linear-gradient(320.42deg, #EFA535 39.21%, #FFE97A 89.5%), #C4C4C4;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -962,4 +962,31 @@ ul {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
   grid-area: tel;
+}
+
+.input-group {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 10px;
+}
+
+.file {
+  width: 80px;
+  height: 80px;
+  background: url("data:image/svg+xml,%3Csvg width='80' height='80' viewBox='0 0 80 80' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='80' height='80' rx='11.7' fill='%23C4C4C4' fill-opacity='0.35'/%3E%3Cpath d='M39.9637 45.0203C42.3147 45.0203 44.2206 43.1144 44.2206 40.7634C44.2206 38.4124 42.3147 36.5065 39.9637 36.5065C37.6127 36.5065 35.7068 38.4124 35.7068 40.7634C35.7068 43.1144 37.6127 45.0203 39.9637 45.0203Z' fill='%23C2C9D1' fill-opacity='0.41'/%3E%3Cpath d='M35.9729 27.4606L33.5385 30.1211H29.3215C27.8581 30.1211 26.6609 31.3184 26.6609 32.7817V48.7451C26.6609 50.2084 27.8581 51.4057 29.3215 51.4057H50.606C52.0693 51.4057 53.2666 50.2084 53.2666 48.7451V32.7817C53.2666 31.3184 52.0693 30.1211 50.606 30.1211H46.389L43.9546 27.4606H35.9729ZM39.9637 47.4148C36.2921 47.4148 33.3123 44.435 33.3123 40.7634C33.3123 37.0918 36.2921 34.112 39.9637 34.112C43.6353 34.112 46.6152 37.0918 46.6152 40.7634C46.6152 44.435 43.6353 47.4148 39.9637 47.4148Z' fill='%23C2C9D1' fill-opacity='0.41'/%3E%3C/svg%3E%0A") no-repeat;
+  border-radius: 12px;
+  -ms-flex-negative: 0;
+      flex-shrink: 0;
+}
+
+.file input {
+  visibility: hidden;
+}
+
+.room-name span {
+  margin-left: 16px;
+  font-size: 14px;
+  line-height: 1;
+  color: #000000;
 }

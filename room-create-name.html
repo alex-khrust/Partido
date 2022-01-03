@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+  <meta name="description" content="Partido | Create room">
+  <meta property="og:title" content="Partido">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.partido.pp.ua/">
+  <meta property="og:image" content="https://www.partido.pp.ua/images/logo.webp">
+  <meta property="og:site_name" content="Partido | Create room">
+  <title>Partido | Create room</title>
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+  <div class="room room-create-name">
+    <div class="container">
+
+      <header class="room__header">
+        <a href="room-create.html" class="btn-back"></a>
+        <h1 class="title welcome">Create a room</h1>
+      </header>
+
+      <main class="room__main">
+        <form class="room-create-name-form" action="" method="post" novalidate>
+          
+          <div class="input-group">
+            <div class="file input-box">
+              <label>
+                <input type="file" name="file" placeholder="">
+              </label>
+            </div>
+            <div class="room-name input-box">
+              <label>
+                <span>Room name</span>
+                <input type="name" name="name" placeholder="Awesome room!">
+              </label>
+            </div>
+          </div>
+
+          <ul class="add-members__list">
+            <li class="add-members__item">
+              <label class="member-check">
+                <input type="checkbox" name="chbx" required>
+                <span></span>
+                <div class="member">
+                  <div class="member__foto">
+                    <img src="" alt="">
+                    <span class="letter">A</span>
+                  </div>
+                  <span class="member__name">Andrew Y</span>
+                  <span class="member__tel">+380 664 82 14 45</span>
+                </div>
+              </label>
+            </li>
+            <li class="add-members__item">
+              <label class="member-check">
+                <input type="checkbox" name="chbx" required>
+                <span></span>
+                <div class="member">
+                  <div class="member__foto">
+                    <img src="" alt="">
+                    <span class="letter">B</span>
+                  </div>
+                  <span class="member__name">Bara Mamara</span>
+                  <span class="member__tel">+380 50 681 42 45</span>
+                </div>
+              </label>
+            </li>
+          </ul>
+
+          <button class="btn btn-blue" type="button">Сontinue</button>
+        </form>
+      </main>
+
+    </div>
+  </div>
+
+</body>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</html>

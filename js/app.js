@@ -23,8 +23,13 @@ document.addEventListener('DOMContentLoaded', () => {
 		return false;
 	});
 
-	//
-	
+	//Рандомные цвета для .member__foto
+	var randomBgClass = $(".member__foto");
+	$(randomBgClass).each(function(index){
+	var randomColor = '#'+ ('EFA535' + Math.floor(index*189898978).toString(16)).slice(-6);
+		$(this).css('background', randomColor);
+	});
 
+	//
 
 })
