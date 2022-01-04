@@ -30,6 +30,34 @@ document.addEventListener('DOMContentLoaded', () => {
 		$(this).css('background', randomColor);
 	});
 
-	//
+	// Превью изображения после загрузки для input file
+	if ($('#imgInp').length) {
+		imgInp.onchange = evt => {
+			const [file] = imgInp.files
+			if (file) {
+				output.src = URL.createObjectURL(file)
+			}
+		};
+	};
 
+
+	//POPUP open/close
+	$(".open-popup").on("click", function (e) {
+		e.preventDefault();
+		var dataPopup = $('.' + $(this).attr("data-popup"));
+		$(".popup").removeClass("open");
+		$(dataPopup).addClass("open");
+		$("body").addClass("locked");
+	});
+	// Скрытие popup по клику за его пределами 
+	$(document).mouseup(function (e) {
+		var popup = $(".popup__box");
+		if (!popup.is(e.target) && popup.has(e.target).length === 0) {
+			$("body").removeClass("locked");
+			$(".popup").removeClass("open");
+		}
+	});
+
+
+// =======
 })
