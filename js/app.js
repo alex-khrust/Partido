@@ -59,5 +59,15 @@ document.addEventListener('DOMContentLoaded', () => {
 	});
 
 
+	// Добавление имени выбранного участника в поле поиска при создании комнаты
+	// $('.member-check').on('click', function(){
+	// 	if ($(this).find('input:checkbox').is(':checked')){
+	// 		let text =	$(this).find('.member__name').text();
+	// 		$('.search label').append(text + ',\n');
+	// 	} else {
+	// 		// $('.search input').(text);
+	// 	}
+	// });
+
 // =======
 })
