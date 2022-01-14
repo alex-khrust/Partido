@@ -60,14 +60,67 @@ document.addEventListener('DOMContentLoaded', () => {
 
 
 	// Добавление имени выбранного участника в поле поиска при создании комнаты
-	// $('.member-check').on('click', function(){
-	// 	if ($(this).find('input:checkbox').is(':checked')){
-	// 		let text =	$(this).find('.member__name').text();
-	// 		$('.search label').append(text + ',\n');
-	// 	} else {
-	// 		// $('.search input').(text);
-	// 	}
-	// });
+	$('.member-check').on('click', function(){
+		if ($(this).find('input:checkbox').is(':checked')){
+			let text =	$(this).find('.member__name').text();
+			$('.search label').append(text + ',\n');
+		} else {
+			// $('.search input').(text);
+		}
+	});
+
+	// Tabs с запоминанием выбранного таба в localStorage
+	(function($) {
+		$(function() {
+	 
+			$('.feed__box').each(function(i) {
+				var storage = localStorage.getItem('tab' + i);
+				if (storage) {
+					$(this).find('li').removeClass('active').eq(storage).addClass('active')
+					.closest('.home').find('.feed__box').removeClass('active').eq(storage).addClass('active');
+				}
+			});
+	 
+			$('ul.tabs__list').on('click', 'li:not(.active)', function() {
+				$(this)
+				.addClass('active').siblings().removeClass('active')
+				.closest('.home').find('.home__main .feed__box').removeClass('active').eq($(this).index()).addClass('active');
+				var ulIndex = $('.feed__box').index($(this).parents('.feed__box'));
+				localStorage.removeItem('tab' + ulIndex);
+				localStorage.setItem('tab' + ulIndex, $(this).index());
+			});
+	 
+		});
+	})($);
+
+
+
+	// searching-results
+	$(".search").on("click", function (e) {
+		e.preventDefault();
+		// var dataPopup = $('.' + $(this).attr("data-popup"));
+		$('.home__main .feed__box').removeClass('active');
+		$(".searching-results").removeClass("active").addClass("active");
+		$("body").addClass("locked");
+	});
+
+
+	// Уменьшение header при скролле
+	const $header = $("header")
+	let prevScroll
+	let lastShowPos
+
+	$('main').on("scroll", function() {
+		const scrolled = $('main').scrollTop()
+
+		if (scrolled > 10 && scrolled > prevScroll) {
+			$header.addClass("short")
+			lastShowPos = scrolled
+		} else if (scrolled <= Math.max(lastShowPos - 250, 0)) {
+			$header.removeClass("short")
+		}
+		prevScroll = scrolled
+	})
 
 // =======
 })

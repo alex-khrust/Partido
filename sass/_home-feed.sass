@@ -1,0 +1,705 @@
+.feed
+.btn-menu
+
+.home
+  overflow: hidden
+  .container
+    height: 100vh
+    padding-left: 0
+    padding-right: 0
+    padding-bottom: 0
+    position: relative
+    background: url(../images/home-bg.png) no-repeat
+  &-header
+    display: grid
+    align-content: start
+    padding: 0 25px
+    &.short
+    &__top
+      width: 100%
+      display: flex
+      align-items: center
+      justify-content: space-between
+      margin-bottom: 20px
+      .title
+        font-weight: bold
+        font-size: 26px
+        line-height: 1.3
+        color: #000000
+        margin: 0
+    .btn-menu
+      width: 38px
+      height: 38px
+      background: rgba(66, 120, 255, 0.05)
+      border-radius: 12px
+      display: flex
+      position: relative
+      .dots
+        width: 4px
+        height: 4px
+        background: #4276FF
+        border-radius: 50%
+        display: block
+        position: absolute
+        top: 50%
+        left: 50%
+        transform: translate(-50%, -50%)
+        z-index: 1
+        &::before,
+        &::after
+          content: ''
+          width: 4px
+          height: 4px
+          position: absolute
+          top: -8px
+          background: #4276FF
+          border-radius: 50%
+          display: block
+          z-index: 1
+        &::before
+        &::after
+          top: 8px
+  &__main
+    width: 100%
+    height: auto
+    max-width: 377px
+    position: relative
+
+
+.home-header__buttons,
+.home-add__buttons
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: space-between
+  .btn-home,
+  .home-add-btn
+    width: 65px
+    height: 65px
+    padding: 5px 0
+    display: flex
+    align-items: flex-end
+    justify-content: center
+    background-repeat: no-repeat
+    gap: 10px
+    font-size: 10px
+    font-weight: bold
+    background-repeat: no-repeat !important 
+    background-position: bottom 25px center !important
+    position: relative
+    .notification
+      position: absolute
+      width: 100%
+      height: 100%
+      display: none
+      &.active
+        display: flex
+      &-total
+        position: absolute
+        left: 50%
+        right: 16.1%
+        top: 44%
+        bottom: 29.33%
+        width: 20px
+        height: 20px
+        background: #4276FF
+        border-radius: 50%
+        display: flex
+        align-items: center
+        justify-content: center
+        color: #fff
+        line-height: 1
+        transition: .3s
+
+  .transactions
+    color: #79E090
+    background: url("data:image/svg+xml,%3Csvg width='25' height='42' viewBox='0 0 25 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.2213 37.3657C19.9557 37.3657 24.7037 33.5415 24.7037 27.4828C24.7037 22.7778 21.8678 20.1352 15.2936 18.8246L12.0279 18.1587C8.35413 17.4282 6.8717 16.2465 6.8717 14.3345C6.8717 12.0571 8.99866 10.5532 12.1998 10.5532C14.8639 10.5532 16.8619 11.5199 17.8932 13.8617C18.6236 15.1938 19.526 15.7739 20.9869 15.7739C22.6412 15.7739 23.7584 14.7211 23.7584 13.1742C23.7584 12.6157 23.6724 12.1645 23.5221 11.7347C22.147 7.69569 17.8717 5.31097 12.1998 5.31097C5.30334 5.31097 0.36194 9.0708 0.36194 14.7427C0.36194 19.3617 3.39124 22.3266 9.57874 23.5512L12.8659 24.1957C16.7545 24.9907 18.2154 26.1508 18.2154 28.1918C18.2154 30.4692 15.8521 32.1449 12.3717 32.1449C9.40686 32.1449 6.97913 31.0707 5.96936 28.7074C5.19593 27.3325 4.31506 26.8169 2.98303 26.8169C1.30726 26.8169 0.12561 27.9555 0.12561 29.6742C0.12561 30.2543 0.254517 30.8559 0.469361 31.4144C1.71545 34.809 5.81897 37.3657 12.2213 37.3657Z' fill='%2372C885'/%3E%3Cpath d='M14.5571 3.02499C14.5571 1.65808 13.449 0.549988 12.0821 0.549988C10.7152 0.549988 9.60712 1.65808 9.60712 3.02499V39.325C9.60712 40.6919 10.7152 41.8 12.0821 41.8C13.449 41.8 14.5571 40.6919 14.5571 39.325V3.02499Z' fill='%2372C885'/%3E%3C/svg%3E%0A")
+  .votings
+    color: #FF6D72
+    background: url("data:image/svg+xml,%3Csvg width='32' height='39' viewBox='0 0 32 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='11.8132' width='8.88889' height='27.1117' rx='4.44444' fill='%23FF6D72'/%3E%3Crect x='11.5555' width='8.88889' height='39' rx='4.44444' fill='%23FF6D72'/%3E%3Crect x='23.1111' y='8.21051' width='8.88889' height='30.7895' rx='4.44444' fill='%23FF6D72'/%3E%3C/svg%3E%0A")
+  .shopping-list
+    color: #FFC737
+    background: url("data:image/svg+xml,%3Csvg width='32' height='39' viewBox='0 0 32 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.597 0.117158C12.8979 0.414598 11.3718 1.20772 10.177 2.41405C8.68325 3.92229 7.91473 5.80962 7.91473 7.9697V7.9697C7.91473 8.41253 7.55574 8.77151 7.11291 8.77151H6.24798C4.42349 8.77151 3.92624 8.84715 3.16252 9.24103C2.28999 9.69097 1.46916 10.6928 1.18424 11.6557C1.08797 11.9812 0.000168545 33.3241 1.02233e-07 34.8919C-8.41194e-05 35.3388 0.0518802 35.8926 0.115383 36.1228C0.489833 37.4795 1.74305 38.6169 3.18139 38.9053C3.81153 39.0317 28.1903 39.0315 28.8186 38.9051C30.2679 38.6135 31.5076 37.4885 31.8846 36.1228C31.9481 35.8926 32.0001 35.3388 32 34.8919C31.9998 33.3241 30.912 11.9812 30.8158 11.6557C30.5308 10.6928 29.71 9.69097 28.8375 9.24103C28.0749 8.8478 27.5757 8.77151 25.7638 8.77151H25.227C24.602 8.77151 24.0883 8.27876 24.0622 7.65438V7.65438C23.9915 5.9592 23.6029 4.7618 22.698 3.44985C20.9608 0.931319 17.6731 -0.421256 14.597 0.117158ZM17.137 2.71864C18.663 3.02672 20.0799 4.08429 20.7836 5.44044C21.213 6.26817 21.3867 7.00873 21.3888 8.01999V8.01999C21.3895 8.43481 21.0535 8.77151 20.6387 8.77151H16H11.3613C10.9465 8.77151 10.6105 8.43481 10.6112 8.01999V8.01999C10.6144 6.41669 11.1215 5.18078 12.2049 4.13556C13.5177 2.86919 15.319 2.35173 17.137 2.71864Z' fill='%23FFC737'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.2944 17.045C21.9445 17.163 21.9337 17.1739 17.4921 21.8932L13 26.5L11.1444 24.4367C9.30752 22.4861 9.15095 22.3288 8.94341 22.2255C8.41585 21.963 7.85483 22.0459 7.43629 22.4483C7.10421 22.7676 6.94007 23.2756 7.01996 23.7367C7.10175 24.2088 7.05037 24.1473 9.80775 27.0727C12.2198 29.6318 12.3691 29.7832 12.5733 29.8779C12.8319 29.9978 13.1897 30.0344 13.4291 29.9653C13.8337 29.8486 13.8324 29.9486 19.0123 24.4367C24.3784 18.7265 23.8999 19.1509 23.9815 18.6447C24.0944 17.9439 23.6499 17.2513 23.0129 17.0458C22.8247 16.985 22.4733 16.9847 22.2944 17.045Z' fill='white'/%3E%3C/svg%3E%0A")
+  .to-do-list
+    color: #9584D9
+    background: url("data:image/svg+xml,%3Csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='32' height='33' rx='5' fill='%239584D9'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.2944 10.045C22.9445 10.163 22.9337 10.1739 18.4921 14.8932L14 19.5L12.1444 17.4367C10.3075 15.4861 10.151 15.3288 9.94341 15.2255C9.41585 14.963 8.85483 15.0459 8.43629 15.4483C8.10421 15.7676 7.94007 16.2756 8.01996 16.7367C8.10175 17.2088 8.05037 17.1473 10.8078 20.0727C13.2198 22.6318 13.3691 22.7832 13.5733 22.8779C13.8319 22.9978 14.1897 23.0344 14.4291 22.9653C14.8337 22.8486 14.8324 22.9486 20.0123 17.4367C25.3784 11.7265 24.8999 12.1509 24.9815 11.6447C25.0944 10.9439 24.6499 10.2513 24.0129 10.0458C23.8247 9.98505 23.4733 9.98469 23.2944 10.045Z' fill='white'/%3E%3C/svg%3E%0A")
+  .room
+    color: #4276FF
+    background: url("data:image/svg+xml,%3Csvg width='30' height='35' viewBox='0 0 30 35' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cpath opacity='0.45' d='M15 34.5603L29.8254 26.0007V8.69373L15 17.2534V34.5603Z' fill='%234276FF'/%3E%3Cpath opacity='0.17' d='M14.9512 17.1881L0 25.877L15.0488 34.5659L30 25.877L14.9512 17.1881Z' fill='white'/%3E%3Cg opacity='0.41'%3E%3Crect x='4.55127' y='20.8644' width='20.8973' height='11.4798' fill='url(%23pattern0)'/%3E%3C/g%3E%3Cpath d='M14.882 27.4676C19.2156 27.4676 22.7288 23.9545 22.7288 19.6208C22.7288 15.2872 19.2156 11.774 14.882 11.774C10.5483 11.774 7.03516 15.2872 7.03516 19.6208C7.03516 23.9545 10.5483 27.4676 14.882 27.4676Z' fill='url(%23paint0_linear_1055_1760)'/%3E%3Cpath d='M0.0933915 8.63525L3.2163 10.4851V24.1158L0.0170898 26.0089L0.0933915 8.63525Z' fill='%234276FF'/%3E%3Cpath d='M0.0117188 25.9766L15 34.6283V31.1342L3.22949 24.0938L0.0117188 25.9766Z' fill='url(%23paint1_linear_1055_1760)'/%3E%3Cpath opacity='0.9' d='M14.9123 0L0.090332 8.61326L15.0092 17.2265L29.8312 8.61326L14.9123 0Z' fill='%234276FF'/%3E%3Cpath d='M29.909 8.63525L26.7861 10.4851V24.1158L29.9853 26.0089L29.909 8.63525Z' fill='%234276FF'/%3E%3Cpath d='M29.9876 25.9764L15 34.6282V31.1341L26.7705 24.0936L29.9876 25.9764Z' fill='%234276FF'/%3E%3Cpath d='M15.1425 17.1448L14.9707 34.7171L14.7988 17.1448H15.1425Z' fill='%234276FF'/%3E%3Cpath d='M0.0908203 8.63525L1.03395 9.14463L1.97364 9.6595L3.85302 10.6899C5.10274 11.3815 6.35176 12.0751 7.59735 12.7742C8.845 13.4698 10.0865 14.1758 11.3314 14.8769L15.0558 16.9962H14.8853L18.6049 14.8769C19.8477 14.1758 21.0878 13.4698 22.3341 12.7742C23.5783 12.0751 24.8259 11.3815 26.0743 10.6899L27.9509 9.6595L28.8892 9.14463L29.831 8.63525L28.9154 9.18931L27.9963 9.73786L26.1581 10.835C24.9297 11.5616 23.7006 12.2868 22.4674 13.0058C21.237 13.729 20.0003 14.4411 18.7664 15.1581L15.0558 17.2939L14.9705 17.3427L14.8853 17.2939L11.1698 15.1588C9.93455 14.4411 8.69652 13.7297 7.46399 13.0065C6.23009 12.2875 4.99894 11.5622 3.76916 10.8357L1.92827 9.73855L1.00783 9.19L0.0908203 8.63525Z' fill='%234276FF'/%3E%3Cdefs%3E%3Cpattern id='pattern0' patternContentUnits='objectBoundingBox' width='1' height='1'%3E%3Cuse xlink:href='%23image0_1055_1760'/%3E%3C/pattern%3E%3ClinearGradient id='paint0_linear_1055_1760' x1='6.7574' y1='11.8941' x2='22.4783' y2='27.6151' gradientUnits='userSpaceOnUse'%3E%3Cstop stop-color='%23F5F5F5'/%3E%3Cstop offset='1' stop-color='%23F5F5F5' stop-opacity='0.63'/%3E%3C/linearGradient%3E%3ClinearGradient id='paint1_linear_1055_1760' x1='0.0118837' y1='29.361' x2='14.9998' y2='29.361' gradientUnits='userSpaceOnUse'%3E%3Cstop offset='0.101' stop-color='%233C70FE'/%3E%3Cstop offset='0.2761' stop-color='%233C84FE'/%3E%3Cstop offset='0.5146' stop-color='%233C97FE'/%3E%3Cstop offset='0.7554' stop-color='%233CA3FE'/%3E%3Cstop offset='1' stop-color='%233CA7FE'/%3E%3C/linearGradient%3E%3Cimage id='image0_1055_1760' xlink:href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAATAAAACnCAYAAACW7wC8AAAACXBIWXMAAAsSAAALEgHS3X78AAAA'/%3E%3C/defs%3E%3C/svg%3E%0A")
+
+
+.home-header__form-search
+  width: 100%
+  margin-top: 12px
+  display: flex
+  .search
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      width: 14px
+      height: 14px
+      top: 50%
+      left: 18px
+      transform: translateY(-50%)
+      background: url("data:image/svg+xml,%3Csvg width='14' height='14' viewBox='0 0 14 14' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.9999 13L10.1045 10.1046' stroke='%234276FF' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3Cpath d='M11.6667 6.33333C11.6667 9.27885 9.27885 11.6667 6.33333 11.6667C3.38781 11.6667 1 9.27885 1 6.33333C1 3.38781 3.38781 1 6.33333 1C9.27885 1 11.6667 3.38781 11.6667 6.33333Z' stroke='%2371717B' stroke-width='1.33333' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A") no-repeat
+      z-index: 1
+    input
+      min-height: 38px !important
+      padding: 8px 12px 8px 40px !important
+      font-size: 14px
+
+.tabs
+  width: 100%
+  display: block
+  padding-top: 25px
+  position: relative
+  &::after
+    content: ''
+    position: absolute
+    top: 12px
+    left: 0
+    width: 100%
+    height: 1px
+    background: #C4C4C4
+    opacity: 0.2
+    display: flex
+  &__list
+    width: 100%
+    padding: 4px
+    margin: 0
+    display: flex
+    align-items: center
+    justify-content: space-between
+    gap: 4px
+    background: #EBEBEB
+    border-radius: 12px
+  &__item
+    width: 100%
+    &:hover,
+    &.active
+      .tabs__btn
+        color: #000000
+        background: #FFFFFF
+
+  &__btn
+    width: 100%
+    height: 40px
+    max-width: 156px
+    border-radius: 12px
+    font-weight: 800
+    font-size: 14px
+    text-align: center
+    color: #71717B
+
+
+.feed__box
+  width: 100%
+  height: calc(100vh - 315px)
+  max-width: 377px
+  padding: 45px 0 0
+  margin: 0
+  background: #FFFFFF
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1)
+  border-radius: 20px 20px 0 0
+  display: grid
+  align-content: start
+  position: absolute
+  left: 0
+  bottom: -300%
+  transition: .3s
+  &::before
+    content: ''
+    position: absolute
+    width: 42px
+    height: 6px
+    left: 50%
+    top: 20px
+    transform: translateX(-50%)
+    background: #F5F5F5
+    border-radius: 40px
+  &.active
+    bottom: 0
+    visibility: visible
+
+
+.feed__list,
+.rooms-chats__list
+  width: 100%
+  height: auto
+  padding-bottom: 10px
+  margin: 0
+  display: grid
+  align-content: start
+  // gap: 20px
+  list-style: none
+  overflow-y: auto
+
+.rooms-chats__list
+  // padding-top: 10px
+
+.feed__item,
+.rooms-chats__item,
+.feed-title
+  padding-left: 25px
+  padding-right: 25px
+
+.feed-data,
+.feed-title
+  width: 100%
+  height: auto
+  position: relative
+  display: flex
+  align-items: center
+  z-index: 1
+  &::after
+    content: ''
+    width: calc(100% - 50px)
+    height: 1px
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    display: block
+    background: rgba(196, 196, 196, 0.2)
+    z-index: -1
+  .data,
+  .title
+    width: auto
+    height: 20px
+    font-weight: 600 !important
+    font-size: 14px !important
+    line-height: 1
+    color: #000000
+    margin: 0
+    display: inline-block
+    padding-right: 18px
+    background: #fff
+
+.feed-data
+  margin-top: 20px
+  margin-bottom: 20px
+  &:first-child
+    margin-top: 0
+  &+.feed-message
+    padding-top: 0
+
+.unread
+  .feed-transactions,
+  .feed-votings,
+  .feed-shopping-list,
+  .feed-to-do-list,
+  .feed-message
+    &__text
+      font-weight: 600
+
+.feed-transactions,
+.feed-votings,
+.feed-shopping-list,
+.feed-to-do-list,
+.feed-message
+  width: 100%
+  height: auto
+  display: flex
+  align-items: flex-start
+  justify-content: flex-start
+  // grid-template-areas: 'image content info'
+  align-content: center
+  gap: 4px 12px
+  position: relative
+  &__user-foto
+    width: 48px
+    height: 48px
+    border-radius: 50%
+    display: flex
+    align-items: center
+    justify-content: center
+    flex-shrink: 0
+    font-size: 18px
+    font-weight: 800
+    line-height: 1
+    color: #fff
+    position: relative
+    justify-self: start
+    grid-area: image
+    img
+      width: 20px
+      height: 20px
+      border-radius: 50%
+      border: 1px solid #fff
+      object-fit: cover
+      z-index: 1
+      position: absolute
+      left: 0%
+      right: 93.88%
+      bottom: 0
+      overflow: hidden
+    .letter
+      display: flex
+      align-items: center
+      justify-content: center
+      line-height: 1
+
+  &__image,
+  &__icon
+    .feed-transactions,
+    .feed-votings,
+    .feed-shopping-list,
+    .feed-to-do-list,
+    .feed-message
+      &__user-foto
+        img
+          z-index: 1
+        img, .letter
+          width: 20px
+          height: 20px
+          border-radius: 50%
+          border: 1px solid #fff
+          object-fit: cover
+          position: absolute
+          left: 0%
+          right: 93.88%
+          bottom: 0
+          overflow: hidden
+          display: flex
+          align-items: center
+          justify-content: center
+          font-size: 12px
+          line-height: 1
+          background: #6C9BFF
+
+  &__content
+    width: 100%
+    height: auto
+    display: grid
+    grid-template-areas: 'title' 'name' 'text'
+    justify-content: start
+    gap: 4px 8px
+    grid-area: content
+
+  &__title,
+  &__in
+    font-weight: 600
+    font-size: 12px
+    line-height: 1.2
+    color: #000
+    display: grid
+    // gap: 5px
+    grid-area: title
+
+  &__in
+    line-height: 1
+    grid-area: in
+
+  &__user-name
+    font-size: 12px !important
+    font-weight: 600
+    line-height: 1
+    color: #71717B !important
+    grid-area: name
+
+  &__room
+    font-size: 12px
+    font-weight: 600
+    grid-area: room
+    line-height: 1
+    
+  &__text
+    margin: 0
+    font-weight: normal
+    font-size: 14px
+    line-height: 18px
+    color: #000000
+    justify-self: start
+    grid-area: text
+  &__info
+    display: grid
+    align-content: start
+    justify-items: center
+    gap: 5px
+    font-size: 10px
+    grid-area: info
+    justify-self: end
+
+.data-time
+  display: grid
+  justify-items: end
+  line-height: 1.4
+  .data
+  .time
+
+
+.feed-message
+  max-height: 98px
+  padding-top: 10px
+  padding-bottom: 10px
+  &::before
+    content: ''
+    width: 100%
+    height: 1px
+    position: absolute
+    top: 0
+    left: 0
+    background: rgba(196, 196, 196, 0.2)
+  .letter
+    font-size: 40px
+    font-weight: bold
+  &__user-foto
+    width: 74px
+    height: 74px
+    background: #6C9BFF
+    img
+      width: 100%
+      height: 100%
+      top: 50%
+      left: 50%
+      transform: translate(-50%, -50%)
+  &__image
+    width: 74px
+    height: 74px
+    flex-shrink: 0
+    background: #E577C5
+    border-radius: 8px
+    position: relative !important
+    overflow: hidden
+    grid-area: image
+    &>img
+      width: 100%
+      height: 100%
+      object-fit: cover
+    .feed-message__user-foto
+      width: 100%
+      height: 100%
+      position: absolute
+      top: 0
+      left: 0
+      right: unset
+      bottom: unset
+      background: none
+      display: none
+      img
+        width: 20px
+        height: 20px
+        border-radius: 50%
+        border: 1px solid #fff
+        object-fit: cover
+        z-index: 1
+        position: absolute
+        top: unset
+        left: 0
+        bottom: 0
+        overflow: hidden
+        transform: translate(0)
+  .letter
+    display: flex
+    align-items: center
+    justify-content: center
+    line-height: 1
+
+.feed__list
+  .feed-message
+    padding-left: 45px
+    position: relative
+    &::before
+      display: none
+    &__user-foto
+      width: 48px
+      height: 48px
+    &__image
+      width: 48px
+      height: 48px
+      border-radius: 8px
+    &__user-name
+
+    .letter
+      font-size: 25px
+      font-weight: 700
+
+.feed-message
+  align-content: start
+  align-items: start
+  &__user-name
+    font-weight: 600
+    font-size: 14px
+    line-height: 120%
+    color: #000
+
+
+
+.feed-shopping-list,
+.feed-votings,
+.feed-transactions,
+.feed-to-do-list
+  padding-top: 15px
+  padding-bottom: 15px
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.14)
+  *
+    color: #fff
+  &__icon
+  &__content
+    grid-template-areas: 'name in room' 'title title title' 'text text text'
+  &__user-name
+    color: #fff !important
+  &__text
+    display: grid
+    p
+      margin: 0
+    span
+      margin-top: 20px 
+      font-size: 14px
+      font-weight: 700
+    .amount
+      padding-top: 10px
+      margin: 10px 0 0
+      border-top: dashed 1px #fff
+
+
+.feed-transactions
+  background: #6FCC83
+  &__icon
+    background: url("data:image/svg+xml,%3Csvg width='25' height='42' viewBox='0 0 25 42' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M12.2213 37.3657C19.9557 37.3657 24.7037 33.5415 24.7037 27.4828C24.7037 22.7778 21.8678 20.1352 15.2936 18.8246L12.0279 18.1587C8.35413 17.4282 6.8717 16.2465 6.8717 14.3345C6.8717 12.0571 8.99866 10.5532 12.1998 10.5532C14.8639 10.5532 16.8619 11.5199 17.8932 13.8617C18.6236 15.1938 19.526 15.7739 20.9869 15.7739C22.6412 15.7739 23.7584 14.7211 23.7584 13.1742C23.7584 12.6157 23.6724 12.1645 23.5221 11.7347C22.147 7.69569 17.8717 5.31097 12.1998 5.31097C5.30334 5.31097 0.36194 9.0708 0.36194 14.7427C0.36194 19.3617 3.39124 22.3266 9.57874 23.5512L12.8659 24.1957C16.7545 24.9907 18.2154 26.1508 18.2154 28.1918C18.2154 30.4692 15.8521 32.1449 12.3717 32.1449C9.40686 32.1449 6.97913 31.0707 5.96936 28.7074C5.19593 27.3325 4.31506 26.8169 2.98303 26.8169C1.30726 26.8169 0.12561 27.9555 0.12561 29.6742C0.12561 30.2543 0.254517 30.8559 0.469361 31.4144C1.71545 34.809 5.81897 37.3657 12.2213 37.3657Z' fill='white'/%3E%3Cpath d='M14.5571 3.02499C14.5571 1.65808 13.449 0.549988 12.0821 0.549988C10.7152 0.549988 9.60712 1.65808 9.60712 3.02499V39.325C9.60712 40.6919 10.7152 41.8 12.0821 41.8C13.449 41.8 14.5571 40.6919 14.5571 39.325V3.02499Z' fill='white'/%3E%3C/svg%3E%0A") no-repeat center
+.feed-votings
+  background: #FF7377
+  &__icon
+    background: url("data:image/svg+xml,%3Csvg width='32' height='39' viewBox='0 0 32 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect y='11.8132' width='8.88889' height='27.1117' rx='4.44444' fill='white'/%3E%3Crect x='11.5555' width='8.88889' height='39' rx='4.44444' fill='white'/%3E%3Crect x='23.1111' y='8.21051' width='8.88889' height='30.7895' rx='4.44444' fill='white'/%3E%3C/svg%3E%0A") no-repeat center
+.feed-shopping-list
+  background: #FFC737
+  &__icon
+    background: url("data:image/svg+xml,%3Csvg width='32' height='39' viewBox='0 0 32 39' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M14.597 0.117158C12.8979 0.414598 11.3718 1.20772 10.177 2.41405C8.68325 3.92229 7.91473 5.80962 7.91473 7.9697V7.9697C7.91473 8.41253 7.55574 8.77151 7.11291 8.77151H6.24798C4.42349 8.77151 3.92624 8.84715 3.16252 9.24103C2.28999 9.69097 1.46916 10.6928 1.18424 11.6557C1.08797 11.9812 0.000168545 33.3241 1.02233e-07 34.8919C-8.41194e-05 35.3388 0.0518802 35.8926 0.115383 36.1228C0.489833 37.4795 1.74305 38.6169 3.18139 38.9053C3.81153 39.0317 28.1903 39.0315 28.8186 38.9051C30.2679 38.6135 31.5076 37.4885 31.8846 36.1228C31.9481 35.8926 32.0001 35.3388 32 34.8919C31.9998 33.3241 30.912 11.9812 30.8158 11.6557C30.5308 10.6928 29.71 9.69097 28.8375 9.24103C28.0749 8.8478 27.5757 8.77151 25.7638 8.77151H25.227C24.602 8.77151 24.0883 8.27876 24.0622 7.65438V7.65438C23.9915 5.9592 23.6029 4.7618 22.698 3.44985C20.9608 0.931319 17.6731 -0.421256 14.597 0.117158ZM17.137 2.71864C18.663 3.02672 20.0799 4.08429 20.7836 5.44044C21.213 6.26817 21.3867 7.00873 21.3888 8.01999V8.01999C21.3895 8.43481 21.0535 8.77151 20.6387 8.77151H16H11.3613C10.9465 8.77151 10.6105 8.43481 10.6112 8.01999V8.01999C10.6144 6.41669 11.1215 5.18078 12.2049 4.13556C13.5177 2.86919 15.319 2.35173 17.137 2.71864Z' fill='white'/%3E%3Cpath d='M13 7C13 5.34315 14.3431 4 16 4V4C17.6569 4 19 5.34315 19 7V8H13V7Z' fill='%23FFC737'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M22.2944 17.045C21.9445 17.163 21.9337 17.1739 17.4921 21.8932L13 26.5L11.1444 24.4367C9.30752 22.4861 9.15095 22.3288 8.94341 22.2255C8.41585 21.963 7.85483 22.0459 7.43629 22.4483C7.10421 22.7676 6.94007 23.2756 7.01996 23.7367C7.10175 24.2088 7.05037 24.1473 9.80775 27.0727C12.2198 29.6318 12.3691 29.7832 12.5733 29.8779C12.8319 29.9978 13.1897 30.0344 13.4291 29.9653C13.8337 29.8486 13.8324 29.9486 19.0123 24.4367C24.3784 18.7265 23.8999 19.1509 23.9815 18.6447C24.0944 17.9439 23.6499 17.2513 23.0129 17.0458C22.8247 16.985 22.4733 16.9847 22.2944 17.045Z' fill='%23FFC737'/%3E%3C/svg%3E%0A") no-repeat center
+.feed-to-do-list
+  background: #9584D9
+  &__icon
+    background: url("data:image/svg+xml,%3Csvg width='32' height='33' viewBox='0 0 32 33' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Crect width='32' height='33' rx='4' fill='white'/%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M23.2944 10.045C22.9445 10.163 22.9337 10.1739 18.4921 14.8932L14 19.5L12.1444 17.4367C10.3075 15.4861 10.151 15.3288 9.94341 15.2255C9.41585 14.963 8.85483 15.0459 8.43629 15.4483C8.10421 15.7676 7.94007 16.2756 8.01996 16.7367C8.10175 17.2088 8.05037 17.1473 10.8078 20.0727C13.2198 22.6318 13.3691 22.7832 13.5733 22.8779C13.8319 22.9978 14.1897 23.0344 14.4291 22.9653C14.8337 22.8486 14.8324 22.9486 20.0123 17.4367C25.3784 11.7265 24.8999 12.1509 24.9815 11.6447C25.0944 10.9439 24.6499 10.2513 24.0129 10.0458C23.8247 9.98505 23.4733 9.98469 23.2944 10.045Z' fill='%239584D9'/%3E%3C/svg%3E%0A") no-repeat center
+
+
+.searching-results
+  padding: 0
+  display: grid
+  gap: 20px
+  box-shadow: none
+  overflow-y: auto
+  &::before
+    display: none
+  .feed-message
+    &__image
+      width: 34px
+      height: 34px
+      border-radius: 5px
+      &+.feed-message
+        &__content
+          height: 34px
+          align-content: center
+          align-items: center
+          gap: 0
+          .feed-message__title
+            font-size: 14px
+          .feed-message__user-name,
+          .feed-message__text
+            display: none
+        &__info
+          display: none
+    .letter
+      font-size: 25px
+    &__info
+      .notification-total
+        display: none
+.notification-total
+  display: none
+  &.active
+    padding: 4px 8px
+    font-size: 12px
+    color: #fff
+    line-height: 1
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 25px
+    background: #4276FF
+
+.feed-title
+  margin-bottom: 15px
+  .title
+
+
+.btn-add
+  width: 48px
+  height: 48px
+  position: absolute
+  right: 25px
+  bottom: 50px
+  background: #4276FF
+  background-position: center
+  box-shadow: 0px 0px 20px rgba(66, 118, 255, 0.28)
+  border: 1px solid #4276FF
+  border-radius: 12px
+  &::before,
+  &::after
+    content: ''
+    width: 16px
+    height: 2px
+    background: #fff
+    border-radius: 2px
+    position: absolute
+    top: 50%
+    left: 50%
+    transition: .2s
+  &::before
+    transform: translate(-50%, -50%)
+  &::after
+    transform: translate(-50%, -50%) rotate(90deg)
+  &:hover
+    background: #fff
+    &::before,
+    &::after
+      background: #4276FF
+
+
+// popup
+.add-new
+  width: 100%
+  height: 100%
+  position: fixed
+  top: 0
+  left: 0
+  background: rgba(0, 0, 0, 0.12)
+  opacity: 0
+  visibility: none
+  z-index: -9999
+  transition: .3s
+  &.open
+    opacity: 1
+    visibility: visible
+    z-index: 9999
+    .popup__box
+      transform: translateX(-50%) scale(1)
+  .popup__box
+    width: 100%
+    height: auto
+    max-width: 346px
+    background: #252b3e
+    box-shadow: 0 10px 21px rgba(0, 0, 0, 0.29)
+    border-radius: 10px
+    position: absolute
+    left: 50%
+    bottom: 50px
+    transform: translate(0%, 60%) scale(0)
+    transition: .3s
+  .popup__content
+    padding: 20px 10px 20px 10px
+    display: grid
+    justify-content: center
+    gap: 20px
+    .title
+      text-align: center
+      line-height: 1
+      font-weight: 600
+      font-size: 20px
+      color: #fff
+  .home-add__buttons
+  .btn-add
+  .transactions
+  .btn-add-title
+  .votings
+  .shopping-list
+  .to-do-list
+  .room

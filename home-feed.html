@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=3">
+  <meta name="description" content="Partido | Home">
+  <meta property="og:title" content="Partido">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.partido.pp.ua/">
+  <meta property="og:image" content="https://www.partido.pp.ua/images/logo.webp">
+  <meta property="og:site_name" content="Partido | Home">
+  <title>Partido | Home</title>
+  <!-- <base href="../../"> -->
+  <link rel="icon" href="images/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/app.min.css">
+</head>
+
+<body>
+
+  <div class="home feed">
+    <div class="container">
+
+      <header class="home-header">
+        <div class="home-header__top">
+          <h1 class="title">Home</h1>
+          <button class="btn-menu"><span class="dots"></span></button>
+        </div>
+
+        <div class="home-header__buttons">
+          <button class="btn-home transactions">
+            <span class="btn-home-title">Transactions</span>
+            <div class="notification active">
+              <span class="notification-total">1</span>
+            </div>
+          </button>
+          <button class="btn-home votings">
+            <span class="btn-home-title">Votings</span>
+            <div class="notification">
+              <span class="notification-total"></span>
+            </div>
+          </button>
+          <button class="btn-home shopping-list">
+            <span class="btn-home-title">Shopping list</span>
+            <div class="notification">
+              <span class="notification-total"></span>
+            </div>
+          </button>
+          <button class="btn-home to-do-list">
+            <span class="btn-home-title">To do list</span>
+            <div class="notification">
+              <span class="notification-total"></span>
+            </div>
+          </button>
+        </div>
+
+        <div class="tabs">
+          <ul class="tabs__list">
+            <li class="tabs__item active"><button class="tabs__btn">Feed</button></li>
+            <li class="tabs__item"><button class="tabs__btn">Rooms & chats</button></li>
+          </ul>
+        </div>
+
+        <form class="home-header__form-search" action="" method="post">
+          <div class="search input-box">
+            <label>
+              <input type="search" name="search" placeholder="Search something">
+            </label>
+          </div>
+        </form>
+      </header>
+
+      <main class="home__main">
+        <div class="feed__box feed-all active">
+          <ul class="feed__list">
+  
+            <li class="feed__item feed-data">
+              <span class="data">Today</span>
+            </li>
+  
+            <li class="feed__item feed-message">
+              <div class="feed-message__user-foto">
+                <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                <span class="letter">M</span>
+              </div>
+              <div class="feed-message__content">
+                <span class="feed-message__user-name">Bara Mamara</span>
+                <div class="feed-message__text">Hello! Thank you for inviting me!...</div>
+              </div>
+              <div class="feed-message__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+              </div>
+            </li>
+  
+            <li class="feed__item feed-transactions">
+              <div class="feed-transactions__icon">
+                <div class="feed-transactions__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-transactions__content">
+                <span class="feed-transactions__user-name">Bara Mamara</span>
+                <span class="feed-transactions__in">in</span>
+                <span class="feed-transactions__title">Created a new transaction</span>
+                <span class="feed-transactions__room">Stockholm 2022</span>
+                <div class="feed-transactions__text">
+                  <p>Fly tickets for all!</p>
+                  <span class="amount">$1200</span>
+                  <span>View transaction!</span>
+                </div>
+              </div>
+              <div class="feed-transactions__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+              </div>
+            </li>
+  
+            <li class="feed__item feed-data">
+              <span class="data">1.10.2021</span>
+            </li>
+  
+            <li class="feed__item feed-message">
+              <div class="feed-message__image">
+                <img src="images/room/room-1.jpg" alt="room image">
+                <span class="letter">M</span>
+                <div class="feed-message__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-message__content">
+                <span class="feed-message__title">Stockholm 2022</span>
+                <span class="feed-message__user-name">Bara Mamara</span>
+                <div class="feed-message__text">Hello Team, This is a first message...</div>
+              </div>
+              <div class="feed-message__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                <!-- <span class="notification-total active">1298</span> -->
+              </div>
+            </li>
+  
+            <li class="feed__item feed-votings">
+              <div class="feed-votings__icon">
+                <div class="feed-votings__user-foto">
+                  <!-- <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto"> -->
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-votings__content">
+                <span class="feed-votings__user-name">Bara Mamara</span>
+                <span class="feed-votings__in">in</span>
+                <span class="feed-votings__room">Stockholm 2022</span>
+                <span class="feed-votings__title">Created a new transaction</span>
+                <div class="feed-votings__text">
+                  <p>Fly tickets for all!</p>
+                  <span>View transaction!</span>
+                </div>
+              </div>
+              <div class="feed-votings__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+              </div>
+            </li>
+  
+            <li class="feed__item feed-shopping-list">
+              <div class="feed-shopping-list__icon">
+                <div class="feed-shopping-list__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-shopping-list__content">
+                <span class="feed-shopping-list__user-name">Bara Mamara</span>
+                <span class="feed-shopping-list__in">in</span>
+                <span class="feed-shopping-list__room">Stockholm 2022</span>
+                <span class="feed-shopping-list__title">Created a new transaction</span>
+                <div class="feed-shopping-list__text">
+                  <p>Fly tickets for all!</p>
+                  <span>View transaction!</span>
+                </div>
+              </div>
+              <div class="feed-shopping-list__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+              </div>
+            </li>
+  
+            <li class="feed__item feed-message">
+              <div class="feed-message__user-foto">
+                <img src="images/user-foto/Aleksey_Petrenko.jpg" alt="user foto">
+                <span class="letter">A</span>
+              </div>
+              <div class="feed-message__content">
+                <span class="feed-message__user-name">Aleksey Petrenko</span>
+                <div class="feed-message__text">HEEEEEEY!!! IS TI SO IMPORTANT...</div>
+              </div>
+              <div class="feed-message__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+              </div>
+            </li>
+  
+            <li class="feed__item feed-to-do-list">
+              <div class="feed-to-do-list__icon">
+                <div class="feed-to-do-list__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-to-do-list__content">
+                <span class="feed-to-do-list__user-name">Bara Mamara</span>
+                <span class="feed-to-do-list__in">in</span>
+                <span class="feed-to-do-list__room">Stockholm 2022</span>
+                <span class="feed-to-do-list__title">Created a new transaction</span>
+                <div class="feed-to-do-list__text">
+                  <p>Fly tickets for all!</p>
+                  <span>View transaction!</span>
+                </div>
+              </div>
+              <div class="feed-to-do-list__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+              </div>
+            </li>
+  
+            <li class="feed__item feed-data">
+              <span class="data">12.07.2021</span>
+            </li>
+  
+            <li class="feed__item feed-message">
+              <div class="feed-message__image">
+                <!-- <img src="images/room/room-1.jpg" alt="room image"> -->
+                <span class="letter">M</span>
+                <div class="feed-message__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-message__content">
+                <span class="feed-message__title">My birthday 🎁</span>
+                <span class="feed-message__user-name">Bara Mamara</span>
+                <div class="feed-message__text">
+                  What? <a href="" class="link-user">Aleksey Petrenko</a>
+                </div>
+              </div>
+              <div class="feed-message__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                <!-- <span class="notification-total active">1298</span> -->
+              </div>
+            </li>
+  
+            <li class="feed__item feed-message">
+              <div class="feed-message__image">
+                <!-- <img src="images/room/room-1.jpg" alt="room image"> -->
+                <span class="letter">M</span>
+                <div class="feed-message__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-message__content">
+                <span class="feed-message__title">My birthday 🎁</span>
+                <span class="feed-message__user-name">Bara Mamara</span>
+                <div class="feed-message__text">🤣🤣🤣🤣😀</div>
+              </div>
+              <div class="feed-message__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                <!-- <span class="notification-total active">1298</span> -->
+              </div>
+            </li>
+  
+          </ul>
+        </div><!-- ./feed-all -->
+        
+        <div class="feed__box rooms-chats">
+          <ul class="rooms-chats__list">
+  
+            <li class="rooms-chats__item feed-message unread">
+              <div class="feed-message__image">
+                <!-- <img src="images/room/room-1.jpg" alt="room image"> -->
+                <span class="letter">M</span>
+                <div class="feed-message__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-message__content">
+                <span class="feed-message__title">My birthday is a cool day 🎁</span>
+                <span class="feed-message__user-name">Bara Mamara</span>
+                <div class="feed-message__text">Hello Team, This is a first message...</div>
+              </div>
+              <div class="feed-message__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                <span class="notification-total active">1298</span>
+              </div>
+            </li>
+  
+            <li class="rooms-chats__item feed-message">
+              <div class="feed-message__image">
+                <img src="images/room/room-1.jpg" alt="room image">
+                <span class="letter">M</span>
+                <div class="feed-message__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-message__content">
+                <span class="feed-message__title">Stockholm 2022</span>
+                <span class="feed-message__user-name">Mariam</span>
+                <div class="feed-message__text">Hello When we go to Stockholm?</div>
+              </div>
+              <div class="feed-message__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+              </div>
+            </li>
+  
+            <li class="rooms-chats__item feed-message">
+              <div class="feed-message__image">
+                <!-- <img src="images/room/room-1.jpg" alt="room image"> -->
+                <span class="letter">P</span>
+                <div class="feed-message__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+              </div>
+              <div class="feed-message__content">
+                <span class="feed-message__title">Partido Design</span>
+                <span class="feed-message__user-name">Andrew</span>
+                <div class="feed-message__text">Всім привіт! На 9:30 чекаю всіх за запрошенням...</div>
+              </div>
+              <div class="feed-message__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+              </div>
+            </li>
+  
+            <li class="rooms-chats__item feed-message">
+              <div class="feed-message__user-foto">
+                <img src="images/user-foto/Taras_Oliinyk.jpg" alt="user foto">
+                <span class="letter">P</span>
+              </div>
+              <div class="feed-message__content">
+                <span class="feed-message__user-name">Taras Oliinyk</span>
+                <div class="feed-message__text">Ти купив молока??!</div>
+              </div>
+              <div class="feed-message__info">
+                <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+              </div>
+            </li>
+  
+  
+          </ul>
+        </div><!-- /.rooms-chats -->
+
+        <div class="feed__box searching-results">
+
+          <div class="searching-results__list">
+            <div class="feed-title"><h2 class="title">Rooms</h2></div>
+
+            <ul class="rooms-chats__list">
+  
+              <li class="rooms-chats__item feed-message">
+                <div class="feed-message__image">
+                  <!-- <img src="images/room/room-1.jpg" alt="room image"> -->
+                  <span class="letter">M</span>
+                  <div class="feed-message__user-foto">
+                    <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                    <span class="letter">M</span>
+                  </div>
+                </div>
+                <div class="feed-message__content">
+                  <span class="feed-message__title">My birthday is a cool day 🎁</span>
+                  <span class="feed-message__user-name">Bara Mamara</span>
+                  <div class="feed-message__text">Hello Team, This is a first message...</div>
+                </div>
+                <div class="feed-message__info">
+                  <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                  <span class="notification-total active">1298</span>
+                </div>
+              </li>
+    
+              <li class="rooms-chats__item feed-message">
+                <div class="feed-message__image">
+                  <img src="images/room/room-1.jpg" alt="room image">
+                  <span class="letter">M</span>
+                  <div class="feed-message__user-foto">
+                    <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                    <span class="letter">M</span>
+                  </div>
+                </div>
+                <div class="feed-message__content">
+                  <span class="feed-message__title">Stockholm 2022</span>
+                  <span class="feed-message__user-name">Mariam</span>
+                  <div class="feed-message__text">Hello When we go to Stockholm?</div>
+                </div>
+                <div class="feed-message__info">
+                  <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                </div>
+              </li>
+    
+              <li class="rooms-chats__item feed-message">
+                <div class="feed-message__image">
+                  <!-- <img src="images/room/room-1.jpg" alt="room image"> -->
+                  <span class="letter">P</span>
+                  <div class="feed-message__user-foto">
+                    <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                    <span class="letter">M</span>
+                  </div>
+                </div>
+                <div class="feed-message__content">
+                  <span class="feed-message__title">Partido Design</span>
+                  <span class="feed-message__user-name">Andrew</span>
+                  <div class="feed-message__text">Всім привіт! На 9:30 чекаю всіх за запрошенням...</div>
+                </div>
+                <div class="feed-message__info">
+                  <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                </div>
+              </li>
+    
+            </ul>
+          </div>
+
+          <div class="searching-results__list">
+            <div class="feed-title"><h2 class="title">Messages</h2></div>
+
+            <ul class="rooms-chats__list">
+    
+              <li class="rooms-chats__item feed-message">
+                <div class="feed-message__user-foto">
+                  <img src="images/user-foto/Taras_Oliinyk.jpg" alt="user foto">
+                  <span class="letter">P</span>
+                </div>
+                <div class="feed-message__content">
+                  <span class="feed-message__user-name">Taras Oliinyk</span>
+                  <div class="feed-message__text">Ти купив молока??!</div>
+                </div>
+                <div class="feed-message__info">
+                  <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                </div>
+              </li>
+
+              <li class="feed__item feed-message">
+                <div class="feed-message__user-foto">
+                  <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                  <span class="letter">M</span>
+                </div>
+                <div class="feed-message__content">
+                  <span class="feed-message__user-name">Bara Mamara</span>
+                  <div class="feed-message__text">Hello! Thank you for inviting me!...</div>
+                </div>
+                <div class="feed-message__info">
+                  <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                </div>
+              </li>
+    
+              <li class="feed__item feed-message">
+                <div class="feed-message__user-foto">
+                  <img src="images/user-foto/Aleksey_Petrenko.jpg" alt="user foto">
+                  <span class="letter">A</span>
+                </div>
+                <div class="feed-message__content">
+                  <span class="feed-message__user-name">Aleksey Petrenko</span>
+                  <div class="feed-message__text">HEEEEEEY!!! IS TI SO IMPORTANT...</div>
+                </div>
+                <div class="feed-message__info">
+                  <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+
+          <div class="searching-results__list">
+            <div class="feed-title"><h2 class="title">Recents</h2></div>
+
+            <ul class="rooms-chats__list">
+  
+              <li class="rooms-chats__item feed-message">
+                <div class="feed-message__image">
+                  <!-- <img src="images/room/room-1.jpg" alt="room image"> -->
+                  <span class="letter">M</span>
+                  <div class="feed-message__user-foto">
+                    <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                    <span class="letter">M</span>
+                  </div>
+                </div>
+                <div class="feed-message__content">
+                  <span class="feed-message__title">My birthday is a cool day 🎁</span>
+                  <span class="feed-message__user-name">Bara Mamara</span>
+                  <div class="feed-message__text">Hello Team, This is a first message...</div>
+                </div>
+                <div class="feed-message__info">
+                  <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                  <span class="notification-total active">1298</span>
+                </div>
+              </li>
+    
+              <li class="rooms-chats__item feed-message">
+                <div class="feed-message__image">
+                  <img src="images/room/room-1.jpg" alt="room image">
+                  <span class="letter">M</span>
+                  <div class="feed-message__user-foto">
+                    <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                    <span class="letter">M</span>
+                  </div>
+                </div>
+                <div class="feed-message__content">
+                  <span class="feed-message__title">Stockholm 2022</span>
+                  <span class="feed-message__user-name">Mariam</span>
+                  <div class="feed-message__text">Hello When we go to Stockholm?</div>
+                </div>
+                <div class="feed-message__info">
+                  <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                </div>
+              </li>
+    
+              <li class="rooms-chats__item feed-message">
+                <div class="feed-message__image">
+                  <!-- <img src="images/room/room-1.jpg" alt="room image"> -->
+                  <span class="letter">P</span>
+                  <div class="feed-message__user-foto">
+                    <img src="images/user-foto/Bara_Mamara.jpg" alt="user foto">
+                    <span class="letter">M</span>
+                  </div>
+                </div>
+                <div class="feed-message__content">
+                  <span class="feed-message__title">Partido Design</span>
+                  <span class="feed-message__user-name">Andrew</span>
+                  <div class="feed-message__text">Всім привіт! На 9:30 чекаю всіх за запрошенням...</div>
+                </div>
+                <div class="feed-message__info">
+                  <div class="data-time">
+                  <span class="data">1.10.2021</span>
+                  <span class="time">12:01</span>
+                </div>
+                </div>
+              </li>
+    
+            </ul>
+          </div>
+
+        </div><!-- /.searching-results -->
+
+      </main>
+      
+      <button class="btn-add open-popup" data-popup="add-new"></button>
+    </div>
+  </div>
+
+
+<!-- popup -->
+<div class="popup add-new">
+  <div class="popup__box">
+      <div class="popup__content">
+          <span class="title">Add new!</span>
+          <div class="home-add__buttons">
+              <button class="home-add-btn transactions">
+                  <span class="home-add-btn-title">Transactions</span>
+              </button>
+              <button class="home-add-btn votings">
+                  <span class="home-add-btn-title">Votings</span>
+              </button>
+              <button class="home-add-btn shopping-list">
+                  <span class="home-add-btn-title">Shopping list</span>
+              </button>
+              <button class="home-add-btn to-do-list">
+                  <span class="home-add-btn-title">To do list</span>
+              </button>
+              <button class="home-add-btn room" data-url="createroom">
+                  <span class="home-add-btn-title">Room</span>
+              </button>
+          </div>
+      </div>
+  </div>
+</div>
+
+
+</body>
+<script src="libs/jquery/dist/jquery.min.js"></script>
+<script src="js/app.js"></script>
+</html>
