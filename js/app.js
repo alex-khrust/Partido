@@ -123,13 +123,19 @@ document.addEventListener('DOMContentLoaded', () => {
 	})
 
 	
-	// Высота страницы по высоте клиента
-	var height = $(document).innerHeight();
-	$('body').css({'height': height});
-	$(window).resize(function () {
-		$('body').css({'height': height});
-	});
+	// Высота страницы по высоте экрана
+	let	windowHeight = $(window).innerHeight();
+	let	headerHeight = $('.home header, .room-page header').height();
+
+	$('body').css({'height': windowHeight});
 	
+	// Высота страницы по высоте экрана при resize
+	$(window).resize(function () {
+		let	windowHeight = $(window).innerHeight();
+		let	headerHeight = $('.home header, .room-page header').height();
+
+		$('body').css('height', windowHeight);
+	});
 	
 	// =======
 })
