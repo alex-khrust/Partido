@@ -122,5 +122,14 @@ document.addEventListener('DOMContentLoaded', () => {
 		prevScroll = scrolled
 	})
 
-// =======
+	
+	// Высота страницы по высоте клиента
+	var height = $(document).innerHeight();
+	$('body').css({'height': height});
+	$(window).resize(function () {
+		$('body').css({'height': height});
+	});
+	
+	
+	// =======
 })
