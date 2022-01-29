@@ -127,14 +127,14 @@ document.addEventListener('DOMContentLoaded', () => {
 	let	windowHeight = $(window).innerHeight();
 	let	headerHeight = $('.home header, .room-page header').height();
 
-	$('body').css({'height': windowHeight});
+	$('.home .container, .room-page .container').css({'height': windowHeight});
 	
 	// Высота страницы по высоте экрана при resize
 	$(window).resize(function () {
 		let	windowHeight = $(window).innerHeight();
 		let	headerHeight = $('.home header, .room-page header').height();
 
-		$('body').css('height', windowHeight);
+		$('.home .container, .room-page .container').css('height', windowHeight);
 	});
 	
 	// =======
