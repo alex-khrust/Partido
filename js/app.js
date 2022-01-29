@@ -126,15 +126,19 @@ document.addEventListener('DOMContentLoaded', () => {
 	// Высота страницы по высоте экрана
 	let	windowHeight = $(window).innerHeight();
 	let	headerHeight = $('.home header, .room-page header').height();
+	let	panelHeight = $('.write-panel').outerHeight();
 
 	$('.home .container, .room-page .container').css({'height': windowHeight});
+	$('.room-page__main .feed__box').css({'padding-bottom': panelHeight});
 	
 	// Высота страницы по высоте экрана при resize
 	$(window).resize(function () {
 		let	windowHeight = $(window).innerHeight();
 		let	headerHeight = $('.home header, .room-page header').height();
-
-		$('.home .container, .room-page .container').css('height', windowHeight);
+		let	panelHeight = $('.write-panel').outerHeight();
+		
+		$('.home .container, .room-page .container').css({'height': windowHeight});
+		$('.room-page__main .feed__box').css({'padding-bottom': panelHeight});
 	});
 	
 	// =======
